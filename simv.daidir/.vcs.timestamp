@@ -121,7 +121,7 @@ ARCH=linux
 0
 0
 3
-1777164924 hw1_10_gates.v
+1777171943 hw1_10_gates.v
 1777161950 hw1_10_tbgates.v
 1204216060 /home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.v
 4
@@ -129,5 +129,5 @@ ARCH=linux
 1723520847 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/liberrorinf.so
 1723520604 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/libsnpsmalloc.so
 1723521397 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/libvfs.so
-1777164930 simv.daidir
+1777171948 simv.daidir
 -1 partitionlib
