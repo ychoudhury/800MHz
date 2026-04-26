@@ -29,11 +29,46 @@ module hw1_10(
         
 	assign rd=rdi;
         assign pushout=pusho;
-        
+       
+	// Declare MUX wires for readability
+	wire signed [32:0] mux_1 = (ML11 <  CL03) ? CL02 : CL00;
+	wire signed [32:0] mux_2 = (ML02 >= ML09) ? ML03 : ML04; 
+	wire signed [32:0] mux_3 = (ML04 >  CL06) ? CL01 : ML05;
+	wire signed [32:0] mux_4 = (ML08 <= ML00) ? ML10 : CL05;
+	wire signed [32:0] mux_5 = (CL07 >  ML01) ? ML02 : ML08;
+	wire signed [32:0] mux_6 = (ML10 <  ML05) ? ML08 : ML02;
+
+	// Declare Multipliers ([32:0] * [32:0] = [65:0])
+	wire signed [65:0] mult_1  = ML00  * mux_1; 
+	wire signed [65:0] mult_2  = mux_2 * mux_3; 
+	wire signed [65:0] mult_3  = mux_4 * mux_5; 
+	wire signed [65:0] mult_4  = mux_6 * CL03; 
+	wire signed [65:0] mult_5  = ML06  * mux_4; 
+	wire signed [65:0] mult_6  = ML07  * mux_5; 
+	wire signed [65:0] mult_7  = mux_6 * CL08;
+	wire signed [65:0] mult_8  = mux_1 * CL09; 
+	wire signed [65:0] mult_9  = mux_2 * CL10; 
+	wire signed [65:0] mult_10 = mux_3 * CL11;
+
+	// TODO XOR logic here
+	wire signed [74:0] left_sum = mult_1
+				    + (mult_2 + DL07)
+			    	    - (mult_3 + DL05)
+				    - mult_4
+				    + mux_1;
+
+	wire signed [74:0] right_sum = CL04
+       				     + (mult_2 + DL06)
+			     	     + (mult_5 + DL02)
+				     + mult_6
+				     - (mult_7 + DL03)
+				     - (mult_8 + DL01)
+				     + (mult_9 + DL04)
+				     + (mult_10 + DL00);   
 	
 	always @(*) begin
-        rd_d=ML00*(ML11<CL03?CL02:CL00)+((ML02>=ML09?ML03:ML04)*(ML04>CL06?CL01:ML05)+DL07)-((ML08<=ML00?ML10:CL05)*(CL07>ML01?ML02:ML08)+DL05)-(ML10<ML05?ML08:ML02)*CL03+(ML11<CL03?CL02:CL00)^CL04+((ML02>=ML09?ML03:ML04)*(ML04>CL06?CL01:ML05)+DL06)+(ML06*(ML08<=ML00?ML10:CL05)+DL02)+ML07*(CL07>ML01?ML02:ML08)-((ML10<ML05?ML08:ML02)*CL08+DL03)-((ML11<CL03?CL02:CL00)*CL09+DL01)+((ML02>=ML09?ML03:ML04)*CL10+DL04)+((ML04>CL06?CL01:ML05)*CL11+DL00);
-    end
+		rd_d = left_sum ^ right_sum;
+	end
     always @(posedge(clk) or posedge(reset)) begin
         if(reset) begin
             ML00 <= 0;
