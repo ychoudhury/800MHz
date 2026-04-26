@@ -197,34 +197,88 @@
         "module",
         33
     ],
+    "hw1_10_DW02_mult_2_stage_J1_1": [
+        "hw1_10_DW02_mult_2_stage_J1_1",
+        "NMgsz",
+        "module",
+        34
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_2": [
+        "hw1_10_DW02_mult_2_stage_J1_2",
+        "yRIxc",
+        "module",
+        35
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_3": [
+        "hw1_10_DW02_mult_2_stage_J1_3",
+        "sbDD9",
+        "module",
+        36
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_4": [
+        "hw1_10_DW02_mult_2_stage_J1_4",
+        "V4gTM",
+        "module",
+        37
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_5": [
+        "hw1_10_DW02_mult_2_stage_J1_5",
+        "kn3kP",
+        "module",
+        38
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_6": [
+        "hw1_10_DW02_mult_2_stage_J1_6",
+        "jWp7Z",
+        "module",
+        39
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_7": [
+        "hw1_10_DW02_mult_2_stage_J1_7",
+        "C5kbN",
+        "module",
+        40
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_8": [
+        "hw1_10_DW02_mult_2_stage_J1_8",
+        "zdu76",
+        "module",
+        41
+    ],
+    "hw1_10_DW02_mult_2_stage_J1_9": [
+        "hw1_10_DW02_mult_2_stage_J1_9",
+        "f8a8b",
+        "module",
+        42
+    ],
     "tb10": [
         "tb10",
         "F5qcu",
         "module",
-        34
+        43
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        35
+        44
     ],
     "udp_dff": [
         "udp_dff",
         "exIG1",
         "udp",
-        36
+        45
     ],
     "udp_tlat": [
         "udp_tlat",
         "gSqMj",
         "udp",
-        37
+        46
     ],
     "udp_mux2": [
         "udp_mux2",
         "U7Vwg",
         "udp",
-        38
+        47
     ]
 }

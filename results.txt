@@ -1,5 +1,5 @@
 HW run for user 018189249 assignment id 10
-Run at Sun Apr 26 00:00:52 2026
+Run at Sun Apr 26 00:31:58 2026
 VCS simulation ran
 Synthesis worked ish
 VCS simulation ran
