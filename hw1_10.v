@@ -25,7 +25,7 @@ module hw1_10(
     
         reg signed [74:0] rd_d,rdi;
         
-	reg push1, push2, pusho;
+	reg push1, push2, push3, pusho;
         
 	assign rd=rdi;
         assign pushout=pusho;
@@ -38,70 +38,72 @@ module hw1_10(
 	wire signed [32:0] mux_5 = (CL07 >  ML01) ? ML02 : ML08;
 	wire signed [32:0] mux_6 = (ML10 <  ML05) ? ML08 : ML02;
 
-	// instantiate DW02_mult_2_stage
+	// instantiate DW02_mult_5_stage
 	wire signed [65:0] mult_1, mult_2, mult_3, mult_4, mult_5, mult_6, mult_7, mult_8, mult_9, mult_10;
 	
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_1  ( .A(ML00),   .B(mux_1), .TC(1'b1), .CLK(clk), .PRODUCT(mult_1)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_2  ( .A(mux_2),  .B(mux_3), .TC(1'b1), .CLK(clk), .PRODUCT(mult_2)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_3  ( .A(mux_4),  .B(mux_5), .TC(1'b1), .CLK(clk), .PRODUCT(mult_3)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_4  ( .A(mux_6),  .B(CL03),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_4)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_5  ( .A(ML06),   .B(mux_4), .TC(1'b1), .CLK(clk), .PRODUCT(mult_5)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_6  ( .A(ML07),   .B(mux_5), .TC(1'b1), .CLK(clk), .PRODUCT(mult_6)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_7  ( .A(mux_6),  .B(CL08),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_7)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_8  ( .A(mux_1),  .B(CL09),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_8)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_9  ( .A(mux_2),  .B(CL10),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_9)  );
-	DW02_mult_2_stage #( .A_width(33), .B_width(33) ) u_mult_10 ( .A(mux_3),  .B(CL11),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_10) );	
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_1  ( .A(ML00),   .B(mux_1), .TC(1'b1), .CLK(clk), .PRODUCT(mult_1)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_2  ( .A(mux_2),  .B(mux_3), .TC(1'b1), .CLK(clk), .PRODUCT(mult_2)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_3  ( .A(mux_4),  .B(mux_5), .TC(1'b1), .CLK(clk), .PRODUCT(mult_3)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_4  ( .A(mux_6),  .B(CL03),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_4)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_5  ( .A(ML06),   .B(mux_4), .TC(1'b1), .CLK(clk), .PRODUCT(mult_5)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_6  ( .A(ML07),   .B(mux_5), .TC(1'b1), .CLK(clk), .PRODUCT(mult_6)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_7  ( .A(mux_6),  .B(CL08),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_7)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_8  ( .A(mux_1),  .B(CL09),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_8)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_9  ( .A(mux_2),  .B(CL10),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_9)  );
+	DW02_mult_3_stage #( .A_width(33), .B_width(33) ) u_mult_10 ( .A(mux_3),  .B(CL11),  .TC(1'b1), .CLK(clk), .PRODUCT(mult_10) );
+
 
 	// pipeline alignment registers
+
 	reg signed [65:0] DL00_d1, DL01_d1, DL02_d1, DL03_d1, DL04_d1, DL05_d1, DL06_d1, DL07_d1;
-	reg signed [32:0] mux_1_d1, CL04_d1;
+	reg signed [65:0] DL00_d2, DL01_d2, DL02_d2, DL03_d2, DL04_d2, DL05_d2, DL06_d2, DL07_d2;
+	
+	reg signed [32:0] mux_1_d1, mux_1_d2;
+	reg signed [32:0] CL04_d1,  CL04_d2;
 
 	always @(posedge clk or posedge reset) begin
 		if (reset) begin
-			DL00_d1 <= 0; DL01_d1 <= 0; DL02_d1 <= 0; DL03_d1 <= 0;
-			DL04_d1 <= 0; DL05_d1 <= 0; DL06_d1 <= 0; DL07_d1 <= 0;
-			mux_1_d1 <= 0; CL04_d1 <= 0;
+			DL00_d1 <= 0; DL01_d1 <= 0; DL02_d1 <= 0; DL03_d1 <= 0; DL04_d1 <= 0; DL05_d1 <= 0; DL06_d1 <= 0; DL07_d1 <= 0;
+			DL00_d2 <= 0; DL01_d2 <= 0; DL02_d2 <= 0; DL03_d2 <= 0; DL04_d2 <= 0; DL05_d2 <= 0; DL06_d2 <= 0; DL07_d2 <= 0;
+			mux_1_d1 <= 0; mux_1_d2 <= 0;
+			CL04_d1  <= 0; CL04_d2  <= 0;
 		end else begin
-			DL00_d1 <= DL00; DL01_d1 <= DL01; DL02_d1 <= DL02; DL03_d1 <= DL03;
-			DL04_d1 <= DL04; DL05_d1 <= DL05; DL06_d1 <= DL06; DL07_d1 <= DL07;
+			// Stage 1
+			DL00_d1 <= DL00; DL01_d1 <= DL01; DL02_d1 <= DL02; DL03_d1 <= DL03; DL04_d1 <= DL04; DL05_d1 <= DL05; DL06_d1 <= DL06; DL07_d1 <= DL07;
 			mux_1_d1 <= mux_1; CL04_d1 <= CL04;
+			
+			// Stage 2
+			DL00_d2 <= DL00_d1; DL01_d2 <= DL01_d1; DL02_d2 <= DL02_d1; DL03_d2 <= DL03_d1; DL04_d2 <= DL04_d1; DL05_d2 <= DL05_d1; DL06_d2 <= DL06_d1; DL07_d2 <= DL07_d1;
+			mux_1_d2 <= mux_1_d1; CL04_d2 <= CL04_d1;
 		end
 	end
 
-	/*
-	// Declare Multipliers ([32:0] * [32:0] = [65:0])
-	wire signed [65:0] mult_1  = ML00  * mux_1; 
-	wire signed [65:0] mult_2  = mux_2 * mux_3; 
-	wire signed [65:0] mult_3  = mux_4 * mux_5; 
-	wire signed [65:0] mult_4  = mux_6 * CL03; 
-	wire signed [65:0] mult_5  = ML06  * mux_4; 
-	wire signed [65:0] mult_6  = ML07  * mux_5; 
-	wire signed [65:0] mult_7  = mux_6 * CL08;
-	wire signed [65:0] mult_8  = mux_1 * CL09; 
-	wire signed [65:0] mult_9  = mux_2 * CL10; 
-	wire signed [65:0] mult_10 = mux_3 * CL11;
-	*/
 
 	// XOR logic
 	wire signed [74:0] left_sum = mult_1
-				    + (mult_2 + DL07_d1)
-			    	    - (mult_3 + DL05_d1)
+				    + (mult_2 + DL07_d2)
+			    	    - (mult_3 + DL05_d2)
 				    - mult_4
-				    + mux_1_d1;
+				    + mux_1_d2;
 
-	wire signed [74:0] right_sum = CL04_d1
-       				     + (mult_2 + DL06_d1)
-			     	     + (mult_5 + DL02_d1)
+	wire signed [74:0] right_sum = CL04_d2
+       				     + (mult_2 + DL06_d2)
+			     	     + (mult_5 + DL02_d2)
 				     + mult_6
-				     - (mult_7 + DL03_d1)
-				     - (mult_8 + DL01_d1)
-				     + (mult_9 + DL04_d1)
-				     + (mult_10 + DL00_d1);   
+				     - (mult_7 + DL03_d2)
+				     - (mult_8 + DL01_d2)
+				     + (mult_9 + DL04_d2)
+				     + (mult_10 + DL00_d2);
 	
-	always @(*) begin
+				     
+        always @(*) begin
 		rd_d = left_sum ^ right_sum;
 	end
-    always @(posedge(clk) or posedge(reset)) begin
+   
+       
+
+
+     always @(posedge(clk) or posedge(reset)) begin
         if(reset) begin
             ML00 <= 0;
             CL00 <= 0;
@@ -141,7 +143,8 @@ module hw1_10(
         end else begin
             push1 <= #1 pushin;
             push2 <= #1 push1;
-	    pusho <= #1 push2;
+	    push3 <= #1 push2;
+	    pusho <= #1 push3;
             rdi <= #1 rd_d;
             ML00 <= #1 M00;
             CL00 <= #1 C00;

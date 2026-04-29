@@ -64,6 +64,7 @@ def runsynthesis(clkperiod,idnum):
         fs.write("""set link_library {{/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}}
 set target_library {{/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}}
 suppress_message {{ UID-401 VER-130 }}
+read_sverilog DW02_mult_5_stage.v
 read_sverilog hw1_{2:02d}.v
 current_design hw1_{2:02d}
 create_clock clk -name clk -period {1:5.3f}
@@ -83,6 +84,7 @@ create_clock clk -name clk -period {0:5.3f}
 
 update_timing
 report_timing -max_paths 5
+
 write -hierarchy -format verilog -output hw1_{2:02d}_gates.v
 quit
 

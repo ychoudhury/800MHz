@@ -29,7 +29,7 @@ cdk_dir=/apps/cadence/IC50/tools/dfII/local
 __MODULES_SHARE_MANPATH=:1
 __MODULES_LMINIT=module use --append /usr/share/Modules/modulefiles:module use --append /etc/modulefiles:module use --append /usr/share/modulefiles
 XRDP_SOCKET_PATH=/run/xrdp/1580559394
-XRDP_SESSION=870315
+XRDP_SESSION=1689695
 XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_10
 XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_10
 XMODIFIERS=@im=ibus
@@ -55,21 +55,21 @@ USE_NCSU_CDK=
 UNAME=/bin/uname
 TOOL_HOME=/apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux
 TK_LIBRARY=/apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/etc/auxx/tcllib/tk8.4/library
-SYSTEMD_EXEC_PID=870529
+SYSTEMD_EXEC_PID=1689920
 SYNOPSYS_SIM=/apps/synopsys/2000.12
 SYNOPSYS=/apps/synopsys
 STROOT=/apps/synopsys/TCAD
 STRELEASE=current
 STDB=/home/018189249@SJSUAD.SJSU.EDU/sentaurus
 SSH_AUTH_SOCK=/run/user/1580559394/keyring/ssh
-SSH_AGENT_PID=870475
+SSH_AGENT_PID=1689867
 SNPS_VCS_PYTHON3=/apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/bin/Python-3.6.1/bin/python3
 SNPS_VCS_CLANG_PATH=/apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
 SNPSLMS_LICENSE_FILE=27020@coe-ee-licsrv.sjsuad.sjsu.edu:C:LicensingSynopsysSynopsys_Key_Site_5009_Server_337521_snpslmd.lic
 SKIP_CDS_DIALOG=
-SHELL_SESSION_ID=c36c50d0304346c5800a3d0f73168e06
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/870503,unix/unix:/tmp/.ICE-unix/870503
+SHELL_SESSION_ID=54a51f43de80454dbd2e96f0f7d4c026
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/1689897,unix/unix:/tmp/.ICE-unix/1689897
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QT_IM_MODULE=ibus
@@ -82,7 +82,7 @@ MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
 MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
 MODULESHOME=/usr/share/Modules
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
-MANAGERPID=870324
+MANAGERPID=1689702
 LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
@@ -90,12 +90,12 @@ KRB5CCNAME=KCM:
 KONSOLE_VERSION=230805
 KONSOLE_DBUS_WINDOW=/Windows/1
 KONSOLE_DBUS_SESSION=/Sessions/1
-KONSOLE_DBUS_SERVICE=:1.83
+KONSOLE_DBUS_SERVICE=:1.82
 KDEDIRS=/usr
-JOURNAL_STREAM=8:54527466
+JOURNAL_STREAM=8:57608635
 IUS=/apps/cadence/INCISIVE152
 ISEROOT=/apps/synopsys/TCAD/
-INVOCATION_ID=e7ff50b58e1e466b86e961481adc7511
+INVOCATION_ID=1e55552791e14b46861e6650907ddc1c
 IC=/apps/cadence/IC50
 HSP_HOME=/apps/synopsys/HSPICE/hspice
 HOSTTYPE=x86_64-linux
@@ -103,7 +103,7 @@ HISTCONTROL=ignoredups
 GROUP=domain users
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
 GJS_DEBUG_OUTPUT=stderr
-GIO_LAUNCHED_DESKTOP_FILE_PID=871571
+GIO_LAUNCHED_DESKTOP_FILE_PID=1690620
 GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/org.kde.konsole.desktop
 DEBUGINFOD_IMA_CERT_PATH=/etc/keys/ima:
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1580559394/bus
@@ -121,7 +121,7 @@ ARCH=linux
 0
 0
 3
-1777188806 hw1_10_gates.v
+1777440979 hw1_10_gates.v
 1777161950 hw1_10_tbgates.v
 1204216060 /home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.v
 4
@@ -129,5 +129,5 @@ ARCH=linux
 1723520847 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/liberrorinf.so
 1723520604 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/libsnpsmalloc.so
 1723521397 /apps/synopsys/vcs_2023/vcs/U-2023.03-SP2-8/linux/lib/libvfs.so
-1777188811 simv.daidir
+1777440984 simv.daidir
 -1 partitionlib

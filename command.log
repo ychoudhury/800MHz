@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version V-2023.12-SP5 for linux64 -- Jul 16, 2024
-#@ # Date:   Sun Apr 26 00:32:14 2026
+#@ # Date:   Tue Apr 28 22:35:03 2026
 #@ # Run by: 018189249@coe-ee-cad30.sjsuad.sjsu.edu
 #@ 
 
@@ -9232,6 +9232,7 @@ source -echo -verbose /home/018189249@SJSUAD.SJSU.EDU/287/800MHz/synthesis.scrip
 #@ set link_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}
 #@ set target_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}
 #@ suppress_message { UID-401 VER-130 }
+#@ read_sverilog DW02_mult_5_stage.v
 #@ read_sverilog hw1_10.v
 #@ current_design hw1_10
 #@ create_clock clk -name clk -period 28.000
@@ -9251,5 +9252,6 @@ source -echo -verbose /home/018189249@SJSUAD.SJSU.EDU/287/800MHz/synthesis.scrip
 #@ 
 #@ update_timing
 #@ report_timing -max_paths 5
+#@ 
 #@ write -hierarchy -format verilog -output hw1_10_gates.v
 #@ quit

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1777440980.061275233, "rt":3.09, "ut":2.41, "st":0.09}}
+{"vcselab":{"timestamp_begin":1777440983.196513990, "rt":1.20, "ut":0.56, "st":0.07}}
+{"link":{"timestamp_begin":1777440984.443185313, "rt":0.37, "ut":0.10, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1777440979.877035270}
+{"VCS_COMP_START_TIME": 1777440979.877035270}
+{"VCS_COMP_END_TIME": 1777440984.896837804}
+{"VCS_USER_OPTIONS": "-sverilog /home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.v hw1_10_tbgates.v"}
+{"vcs1": {"peak_mem": 283816}}
+{"vcselab": {"peak_mem": 179252}}
