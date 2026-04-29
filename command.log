@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version V-2023.12-SP5 for linux64 -- Jul 16, 2024
-#@ # Date:   Tue Apr 28 22:35:03 2026
+#@ # Date:   Tue Apr 28 23:16:17 2026
 #@ # Run by: 018189249@coe-ee-cad30.sjsuad.sjsu.edu
 #@ 
 
@@ -9235,7 +9235,7 @@ source -echo -verbose /home/018189249@SJSUAD.SJSU.EDU/287/800MHz/synthesis.scrip
 #@ read_sverilog DW02_mult_5_stage.v
 #@ read_sverilog hw1_10.v
 #@ current_design hw1_10
-#@ create_clock clk -name clk -period 28.000
+#@ create_clock clk -name clk -period 4.900
 #@ set_propagated_clock clk
 #@ set_clock_uncertainty 0.25 clk
 #@ set_propagated_clock clk
@@ -9246,9 +9246,9 @@ source -echo -verbose /home/018189249@SJSUAD.SJSU.EDU/287/800MHz/synthesis.scrip
 #@ set_output_delay 0.6 -clock clk [all_outputs]
 #@ set_fix_hold [ get_clocks clk ]
 #@ set_output_delay 0.3 -clock clk [all_outputs]
-#@ set_max_delay 28.000 -from [all_inputs] -to [all_outputs]
+#@ set_max_delay 4.900 -from [all_inputs] -to [all_outputs]
 #@ compile_ultra
-#@ create_clock clk -name clk -period 40.000
+#@ create_clock clk -name clk -period 7.000
 #@ 
 #@ update_timing
 #@ report_timing -max_paths 5

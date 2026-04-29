@@ -31,7 +31,7 @@ Please use '-no_save' simv switch to avoid this.
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 Initializing...
-Current time:       Tue Apr 28 22:35:04 2026
+Current time:       Tue Apr 28 23:16:18 2026
 Hostname:           coe-ee-cad30.sjsuad.sjsu.edu
 CPU Model:          Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
 CPU Details:        Cores = 16 : Sockets = 1 : Cache Size = 16384 KB : Freq = 4.60 GHz
@@ -40,10 +40,10 @@ RAM:                 15 GB (Free   0 GB)
 Swap:                 7 GB (Free   6 GB)
 Work Filesystem:    /home/018189249@SJSUAD.SJSU.EDU mounted to coe-ee-pool.sjsuad.sjsu.edu:/export/users/018189249
 Tmp Filesystem:     / mounted to /dev/mapper/rhel-root
-Work Disk:          963 GB (Free 722 GB)
+Work Disk:          963 GB (Free 723 GB)
 Tmp Disk:            69 GB (Free  52 GB)
 
-CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 722 GB, Tmp Disk Free: 52 GB
+CPU Load: 5%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 set link_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb}
 /home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db /apps/synopsys/PrimeTimeNew/pts/Q-2019.12/libraries/syn/dw_foundation.sldb
 set target_library {/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db}
@@ -114,12 +114,42 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine hw1_10 line 106 in file
+	in routine hw1_10 line 100 in file
 		'/home/018189249@SJSUAD.SJSU.EDU/287/800MHz/hw1_10.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|      push3_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  add4_R_final_reg   | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_L_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_L_1_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_L_2_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_L_3_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_1_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_2_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_3_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_4_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_5_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add1_R_6_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_L_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_L_1_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_R_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_R_1_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_R_2_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add2_R_3_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add3_L_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add3_R_0_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    add3_R_1_reg     | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  add4_L_final_reg   | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine hw1_10 line 152 in file
+		'/home/018189249@SJSUAD.SJSU.EDU/287/800MHz/hw1_10.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      push7_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
 |      ML00_reg       | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 |      CL00_reg       | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
 |      ML01_reg       | Flip-flop |  33   |  Y  | N  | Y  | N  | N  | N  | N  |
@@ -156,6 +186,10 @@ Inferred memory devices in process
 |      push1_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
 |       rdi_reg       | Flip-flop |  75   |  Y  | N  | Y  | N  | N  | N  | N  |
 |      push2_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      push3_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      push4_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      push5_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      push6_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Current design is now '/home/018189249@SJSUAD.SJSU.EDU/287/800MHz/hw1_10.db:hw1_10'
@@ -165,7 +199,7 @@ hw1_10
 current_design hw1_10
 Current design is 'hw1_10'.
 {hw1_10}
-create_clock clk -name clk -period 28.000
+create_clock clk -name clk -period 4.900
 1
 set_propagated_clock clk
 Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
@@ -189,11 +223,11 @@ set_fix_hold [ get_clocks clk ]
 1
 set_output_delay 0.3 -clock clk [all_outputs]
 1
-set_max_delay 28.000 -from [all_inputs] -to [all_outputs]
+set_max_delay 4.900 -from [all_inputs] -to [all_outputs]
 1
 compile_ultra
 Information: Performing leakage power optimization. (PWR-850)
-CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 722 GB, Tmp Disk Free: 52 GB
+CPU Load: 5%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 Alib files are up-to-date.
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
@@ -213,32 +247,122 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 | Design Information                                      | Value                                  |
 ====================================================================================================
 | Number of Scenarios                                     | 0                                      |
-| Leaf Cell Count                                         | 2716                                   |
+| Leaf Cell Count                                         | 4373                                   |
 | Number of User Hierarchies                              | 0                                      |
-| Sequential Cell Count                                   | 2587                                   |
+| Sequential Cell Count                                   | 4241                                   |
 | Macro Count                                             | 0                                      |
 | Number of Power Domains                                 | 0                                      |
 | Number of Path Groups                                   | 2                                      |
 | Number of VT Class                                      | 0                                      |
 | Number of Clocks                                        | 1                                      |
-| Number of Dont Touch Cells                              | 13                                     |
+| Number of Dont Touch Cells                              | 14                                     |
 | Number of Dont Touch Nets                               | 0                                      |
 | Number of Size Only Cells                               | 0                                      |
 | Design with UPF Data                                    | false                                  |
 ====================================================================================================
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
   Simplifying Design 'hw1_10'
 
 Loaded alib file './alib-52/gscl45nm.db.alib'
   Building model 'DW01_NAND2'
 Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
-CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 722 GB, Tmp Disk Free: 52 GB
+CPU Load: 5%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
   ------------------------
   Processing 'hw1_10'
-Information: In design 'hw1_10', the register 'rdi_reg[73]' is removed because it is merged to 'rdi_reg[74]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[67]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[68]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[69]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[70]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[71]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[72]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[73]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_0_reg[74]' is removed because it is merged to 'add1_L_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[67]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[68]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[69]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[70]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[71]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[72]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[73]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_2_reg[74]' is removed because it is merged to 'add1_L_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[67]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[68]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[69]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[70]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[71]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[72]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[73]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_1_reg[74]' is removed because it is merged to 'add1_L_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[67]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[68]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[69]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[70]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[71]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[72]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[73]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_1_reg[74]' is removed because it is merged to 'add1_R_1_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[67]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[68]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[69]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[70]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[71]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[72]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[73]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_L_3_reg[74]' is removed because it is merged to 'add1_L_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[67]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[68]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[69]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[70]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[71]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[72]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[73]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_5_reg[74]' is removed because it is merged to 'add1_R_5_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[67]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[68]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[69]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[70]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[71]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[72]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[73]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_3_reg[74]' is removed because it is merged to 'add1_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[67]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[68]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[69]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[70]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[71]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[72]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[73]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_2_reg[74]' is removed because it is merged to 'add1_R_2_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[67]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[68]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[69]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[70]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[71]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[72]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[73]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_4_reg[74]' is removed because it is merged to 'add1_R_4_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[67]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[68]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[69]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[70]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[71]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[72]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[73]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_6_reg[74]' is removed because it is merged to 'add1_R_6_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[67]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[68]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[69]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[70]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[71]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[72]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[73]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add1_R_0_reg[74]' is removed because it is merged to 'add1_R_0_reg[66]'. (OPT-1215)
  Implement Synthetic for 'hw1_10'.
 Loading db file '/apps/synopsys/dc_compiler_2023_V/syn/V-2023.12-SP5/libraries/syn/dw_foundation.sldb'
   Processing 'hw1_10_DW02_mult_3_stage_J1_0'
@@ -251,14 +375,53 @@ Loading db file '/apps/synopsys/dc_compiler_2023_V/syn/V-2023.12-SP5/libraries/s
   Processing 'hw1_10_DW02_mult_3_stage_J1_7'
   Processing 'hw1_10_DW02_mult_3_stage_J1_8'
   Processing 'hw1_10_DW02_mult_3_stage_J1_9'
-CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 722 GB, Tmp Disk Free: 52 GB
+CPU Load: 5%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 
   Updating timing information
 Information: Updating design information... (UID-85)
-Information: In design 'hw1_10', the register 'rdi_reg[72]' is removed because it is merged to 'rdi_reg[69]'. (OPT-1215)
-Information: In design 'hw1_10', the register 'rdi_reg[71]' is removed because it is merged to 'rdi_reg[69]'. (OPT-1215)
-Information: In design 'hw1_10', the register 'rdi_reg[70]' is removed because it is merged to 'rdi_reg[69]'. (OPT-1215)
-Information: In design 'hw1_10', the register 'rdi_reg[74]' is removed because it is merged to 'rdi_reg[69]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[67]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[68]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[69]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[70]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[71]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[72]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[73]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_3_reg[74]' is removed because it is merged to 'add2_R_3_reg[66]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[74]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[72]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[70]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[68]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[69]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[71]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_2_reg[73]' is removed because it is merged to 'add2_R_2_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[74]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[72]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[70]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[68]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[69]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[71]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_1_reg[73]' is removed because it is merged to 'add2_R_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[74]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[72]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[70]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[68]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[69]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[71]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_R_0_reg[73]' is removed because it is merged to 'add2_R_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[74]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[72]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[70]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[68]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[69]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[71]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_1_reg[73]' is removed because it is merged to 'add2_L_1_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[74]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[72]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[70]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[68]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[69]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[71]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add2_L_0_reg[73]' is removed because it is merged to 'add2_L_0_reg[67]'. (OPT-1215)
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
@@ -284,6 +447,24 @@ Information: cell u_mult_2 (design hw1_10_DW02_mult_3_stage_J1_8) is a pipeline.
 Information: Checking pipeline property of cell u_mult_1 (design hw1_10_DW02_mult_3_stage_J1_9). (RTDC-137)
 Information: cell u_mult_1 (design hw1_10_DW02_mult_3_stage_J1_9) is a pipeline. (RTDC-139)
   Mapping Optimization (Phase 1)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[73]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[71]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[69]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[70]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[72]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_1_reg[74]' is removed because it is merged to 'add3_R_1_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[73]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[71]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[69]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[70]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[72]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_R_0_reg[74]' is removed because it is merged to 'add3_R_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[73]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[71]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[69]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[70]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[72]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
+Information: In design 'hw1_10', the register 'add3_L_0_reg[74]' is removed because it is merged to 'add3_L_0_reg[68]'. (OPT-1215)
   Retiming hw1_10_DW02_mult_3_stage_J1_0 (u_mult_10)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -301,7 +482,9 @@ Information: cell u_mult_1 (design hw1_10_DW02_mult_3_stage_J1_9) is a pipeline.
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_1 (u_mult_9)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -319,7 +502,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_2 (u_mult_8)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -337,7 +522,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.49
+  Critical path length = 4.49
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_3 (u_mult_7)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -355,7 +542,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_4 (u_mult_6)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -373,7 +562,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_5 (u_mult_5)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -391,7 +582,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.46
+  Critical path length = 4.46
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_6 (u_mult_4)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -409,7 +602,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_7 (u_mult_3)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -427,7 +622,9 @@ Registers not moved
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 4.48
+  Critical path length = 4.48
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_8 (u_mult_2)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -441,11 +638,13 @@ Registers not moved
   5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100% 
   ... minimum area retiming step 2 done.
   Beginning minimum area retiming step 3 ...
-  10% 20% 30% 40% 50% 60% ... 100% 
+  10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 5.38
+  Critical path length = 5.38
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
   Retiming hw1_10_DW02_mult_3_stage_J1_9 (u_mult_1)
   Preferred flip-flop is DFFPOSX1 with setup = 0.05
 
@@ -459,23 +658,28 @@ Registers not moved
   5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100% 
   ... minimum area retiming step 2 done.
   Beginning minimum area retiming step 3 ...
-  10% 20% 30% 40% 50% 60% ... 100% 
+  10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
   ... minimum area retiming step 3 done.
   Beginning final register move ...
   ... final register move done.
-Registers not moved
+  Lower bound estimate = 5.37
+  Critical path length = 5.37
+  Clock correction = 0.41 (clock-to-Q delay = 0.11, setup = 0.05, uncertainty = 0.25)
+  Mapping Optimization (Phase 2)
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:34  151658.5      0.00       0.0   30496.3                           841272.9375      0.00  
-    0:00:35  151655.7      0.00       0.0   30491.0                           841267.8125      0.00  
+    0:00:37  174846.6      2.77     108.6   44212.9 u_mult_2/clk_r_REG8_S2/D  1031856.8750      0.00  
+    0:00:37  174846.6      2.77     108.6   44212.9 u_mult_2/clk_r_REG8_S2/D  1031856.8750      0.00  
+    0:00:38  174935.8      2.75     106.8   44230.9                           1032089.6875      0.00  
+    0:00:38  174935.8      2.75     106.8   44230.9                           1032089.6875      0.00  
 
   Beginning Constant Register Removal
   -----------------------------------
-    0:00:36  152247.0      0.00       0.0   30491.0                           845706.2500      0.00  
-    0:00:37  152247.0      0.00       0.0   30491.0                           845706.2500      0.00  
+    0:00:40  174926.4      3.31     141.7   44230.9                           1032058.9375      0.00  
+    0:00:40  174926.4      3.31     141.7   44230.9                           1032058.9375      0.00  
 
   Beginning Global Optimizations
   ------------------------------
@@ -517,39 +721,41 @@ Registers not moved
 
   Beginning Delay Optimization
   ----------------------------
-    0:00:44  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
-    0:00:44  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
-    0:00:44  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
-    0:00:44  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
-    0:00:46  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
-    0:00:47  141344.7      0.00       0.0   27569.5                           727474.2500      0.00  
+    0:00:50  166354.2      0.77      37.0   40045.3                           946592.5625      0.00  
+    0:00:54  172025.7      0.00       0.0   43117.1                           979615.9375      0.00  
+    0:00:54  172025.7      0.00       0.0   43117.1                           979615.9375      0.00  
+    0:00:54  172025.7      0.00       0.0   43117.1                           979615.9375      0.00  
+    0:00:56  172008.3      0.00       0.0   43124.0                           979530.1250      0.00  
+    0:00:57  172008.3      0.00       0.0   43124.0                           979530.1250      0.00  
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:52  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:52  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:52  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:52  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:52  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
+    0:01:08  170124.5      0.00       0.0   43025.0                           958353.1250      0.00  
+    0:01:10  168403.1      0.00       0.0   42931.9                           950719.5000      0.00  
+    0:01:10  167884.1      0.00       0.0   42837.1                           949071.5625      0.00  
+    0:01:11  167884.1      0.00       0.0   42837.1                           949071.5625      0.00  
+    0:01:11  167884.1      0.00       0.0   42837.1                           949071.5625      0.00  
+    0:01:11  167884.1      0.00       0.0   42837.1                           949071.5625      0.00  
+    0:01:11  167884.1      0.00       0.0   42837.1                           949071.5625      0.00  
+    0:01:12  167767.7      3.75     105.7   42780.4                           946714.9375      0.00  
+    0:01:12  167767.7      3.75     105.7   42780.4                           946714.9375      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:13  167771.9      2.97     103.4   42788.9                           946777.7500      0.00  
+    0:01:15  168459.9      2.64      96.3   43099.9                           951451.1875      0.00  
+    0:01:15  168459.9      2.64      96.3   43099.9                           951451.1875      0.00  
+    0:01:20  168945.7      2.60      95.6   43517.7                           953197.9375      0.00  
+    0:01:20  168945.7      2.60      95.6   43517.7                           953197.9375      0.00  
+    0:01:22  169006.7      2.55      95.6   43559.9                           953640.3125      0.00  
+    0:01:22  169006.7      2.55      95.6   43559.9                           953640.3125      0.00  
+    0:01:23  169042.3      2.55      95.6   43591.0                           953727.3750      0.00  
+    0:01:23  169042.3      2.55      95.6   43591.0                           953727.3750      0.00  
+    0:01:23  169049.4      2.55      95.6   43589.5                           953864.0000      0.00  
+    0:01:23  169049.4      2.55      95.6   43589.5                           953864.0000      0.00  
+    0:01:23  169049.4      2.55      95.6   43589.5                           953864.0000      0.00  
 
 
   Beginning Design Rule Fixing  (max_capacitance)
@@ -559,52 +765,64 @@ Registers not moved
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:53  140454.9      0.00       0.0   27569.5                           721777.2500      0.00  
+    0:01:23  169049.4      2.55      95.6   43589.5                           953864.0000      0.00  
   Global Optimization (Phase 31)
   Global Optimization (Phase 32)
   Global Optimization (Phase 33)
-    0:01:01  143502.6      0.00       0.0   22300.0                           745267.6875      0.00  
-    0:01:01  143502.6      0.00       0.0   22300.0                           745267.6875      0.00  
-    0:01:01  144045.5      0.00       0.0   22300.0                           749642.5000      0.00  
-    0:01:01  144045.5      0.00       0.0   22300.0                           749642.5000      0.00  
-    0:01:01  144045.5      0.00       0.0   22300.0                           749642.5000      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:02  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
+    0:01:34  173715.6      2.54      95.8   35695.4 u_mult_7/clk_r_REG82_S2/D 992371.8750      0.00  
+    0:01:34  173859.7      2.61      95.8   35683.9 u_mult_8/clk_r_REG81_S2/D 993289.3125      0.00  
+    0:01:35  173947.9      2.56      95.8   35663.4 u_mult_8/clk_r_REG81_S2/D 993955.5625      0.00  
+    0:01:35  174081.7      2.69      97.0   35538.8 u_mult_9/net303944        994358.3125      0.00  
+    0:01:35  174252.5      2.66      97.0   35281.1 u_mult_7/clk_r_REG82_S2/D 995282.8125      0.00  
+    0:01:36  174261.4      2.65      97.0   35273.2 u_mult_7/clk_r_REG82_S2/D 995363.6250      0.00  
+    0:01:36  174417.7      2.65      97.5   34942.0 u_mult_7/clk_r_REG82_S2/D 996560.8750      0.00  
+    0:01:36  174413.5      2.65      97.5   34941.6                           996541.1875      0.00  
+    0:01:44  174412.1      2.54      97.2   34986.6                           996494.2500      0.00  
+    0:01:47  174772.5      0.00       0.0   34984.3                           999659.5000      0.00  
+    0:01:47  174772.5      0.00       0.0   34984.3                           999659.5000      0.00  
+    0:01:47  174772.5      0.00       0.0   34984.3                           999659.5000      0.00  
+    0:01:49  174507.3      4.28     465.3   35126.5                           993737.8125      0.00  
+    0:01:49  174507.3      4.28     465.3   35126.5                           993737.8125      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:53  176571.3      3.43     404.7   36455.8                           1001233.8750      0.00  
+    0:01:59  178417.1      2.43     354.8   37481.4                           1012976.5000      0.00  
+    0:01:59  178417.1      2.43     354.8   37481.4                           1012976.5000      0.00  
+    0:02:08  180367.9      2.09     315.9   38786.3                           1020134.9375      0.00  
+    0:02:08  180367.9      2.09     315.9   38786.3                           1020134.9375      0.00  
+    0:02:12  180738.7      2.02     307.5   38926.8                           1023504.6875      0.00  
+    0:02:12  180738.7      2.02     307.5   38926.8                           1023504.6875      0.00  
+    0:02:18  181185.5      1.98     303.2   39167.6                           1025344.9375      0.00  
+    0:02:18  181185.5      1.98     303.2   39167.6                           1025344.9375      0.00  
+    0:02:19  181235.2      1.97     302.6   39162.8                           1025910.5625      0.00  
+    0:02:19  181235.2      1.97     302.6   39162.8                           1025910.5625      0.00  
+    0:02:19  181235.2      1.97     302.6   39162.8                           1025910.5625      0.00  
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:01:03  143692.6      0.00       0.0   22312.9                           745102.6250      0.00  
-    0:01:04  144451.9      0.00       0.0   22293.4                           760698.3750      0.00  
-    0:01:04  144451.9      0.00       0.0   22293.4                           760698.3750      0.00  
-    0:01:04  144451.9      0.00       0.0   22293.4                           760698.3750      0.00  
-    0:01:07  143533.1      0.00       0.0   22311.2                           748718.0625      0.00  
-    0:01:08  143039.4      0.00       0.0   22311.2                           747635.5000      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-    0:01:10  143765.8      0.00       0.0   21629.5                           751812.6250      0.00  
-CPU Load: 7%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
+    0:02:20  181235.2      1.97     302.6   39162.8                           1025910.5625      0.00  
+    0:02:22  178345.3      6.03    3042.0   38730.7                           1000918.7500      0.00  
+    0:02:23  179296.1      5.59    2965.0   38811.0                           1004654.0000      0.00  
+    0:02:23  179288.1      5.59    2965.1   38805.4                           1004744.6250      0.00  
+    0:02:23  179288.1      5.59    2965.1   38805.4                           1004744.6250      0.00  
+    0:02:25  179334.1      5.59    3014.5   38814.4                           1005074.3125      0.00  
+    0:02:26  178304.0      3.54      80.0   38811.0                           1002270.2500      0.00  
+    0:02:27  177661.5      3.54      79.5   38810.7                           1000996.5000      0.00  
+    0:02:31  177336.3      0.47       2.6   38503.4 u_mult_6/net310398        997804.7500      0.00  
+    0:02:31  177882.5      0.07       0.3   37789.3 u_mult_2/clk_r_REG4_S2/D  1000554.7500      0.00  
+    0:02:32  178027.1      0.05       0.1   37485.8                           1001807.9375      0.00  
+    0:02:32  178023.3      0.00       0.0   37551.2                           1001609.2500      0.00  
+    0:02:32  178023.3      0.00       0.0   37551.2                           1001609.2500      0.00  
+    0:02:32  178023.3      0.00       0.0   37551.2                           1001609.2500      0.00  
+    0:02:32  178023.3      0.00       0.0   37551.2                           1001609.2500      0.00  
+    0:02:32  178023.3      0.00       0.0   37551.2                           1001609.2500      0.00  
+    0:02:33  177870.3      0.00       0.0   37560.2                           999686.3125      0.00  
+CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 Loading db file '/home/morris/FreePDK45/osu_soc/lib/files/gscl45nm.db'
 
 
@@ -614,11 +832,11 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   Optimization Complete
   ---------------------
 Warning: Design 'hw1_10' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'n210': 2580 load(s), 1 driver(s)
-     Net 'u_mult_1/CLK': 3902 load(s), 1 driver(s)
+     Net 'n217': 4086 load(s), 1 driver(s)
+     Net 'u_mult_1/CLK': 4910 load(s), 1 driver(s)
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-CPU Load: 7%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
+CPU Load: 6%, Ram Free: 0 GB, Swap Free: 6 GB, Work Disk Free: 723 GB, Tmp Disk Free: 52 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   
@@ -639,7 +857,7 @@ Unmapped MV Cells
 0 Retention Clamp Cells are unmapped 
 ----------------------------------------------------------------------------------------------------
 1
-create_clock clk -name clk -period 40.000
+create_clock clk -name clk -period 7.000
 1
 update_timing
 Information: Updating design information... (UID-85)
@@ -654,7 +872,7 @@ Report : timing
         -max_paths 5
 Design : hw1_10
 Version: V-2023.12-SP5
-Date   : Tue Apr 28 22:36:18 2026
+Date   : Tue Apr 28 23:18:56 2026
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -662,713 +880,9 @@ Date   : Tue Apr 28 22:36:18 2026
 Operating Conditions: typical   Library: gscl45nm
 Wire Load Model Mode: top
 
-  Startpoint: DL00_d2_reg[1]
+  Startpoint: u_mult_2/mult_x_1/clk_r_REG130_S1
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: rdi_reg[68]
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: max
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  DL00_d2_reg[1]/CLK (DFFSR)               0.00 #     0.00 r
-  DL00_d2_reg[1]/Q (DFFSR)                 0.11       0.11 r
-  U1625/Y (BUFX2)                          0.05       0.15 r
-  intadd_131/U4/YS (FAX1)                  0.11       0.26 r
-  intadd_58/U5/YS (FAX1)                   0.08       0.34 r
-  U1142/Y (INVX1)                          0.03       0.38 f
-  intadd_191/U3/YC (FAX1)                  0.09       0.47 f
-  intadd_191/U2/YS (FAX1)                  0.08       0.55 f
-  U4159/Y (NAND2X1)                        0.03       0.59 r
-  U4162/Y (AOI21X1)                        0.03       0.62 f
-  U4163/Y (NAND2X1)                        0.04       0.65 r
-  U4166/Y (AOI21X1)                        0.03       0.68 f
-  U4167/Y (NAND2X1)                        0.02       0.70 r
-  U4168/Y (INVX1)                          0.02       0.73 f
-  U4169/Y (OAI21X1)                        0.05       0.78 r
-  U1007/Y (OR2X1)                          0.06       0.83 r
-  U4170/Y (INVX1)                          0.02       0.85 f
-  U4171/Y (OAI21X1)                        0.05       0.90 r
-  U987/Y (OR2X1)                           0.06       0.96 r
-  U4172/Y (INVX1)                          0.02       0.98 f
-  U4174/Y (OAI21X1)                        0.05       1.03 r
-  U901/Y (OR2X1)                           0.06       1.09 r
-  U4175/Y (INVX1)                          0.02       1.11 f
-  U4176/Y (OAI21X1)                        0.05       1.16 r
-  U899/Y (OR2X1)                           0.06       1.21 r
-  U4177/Y (INVX1)                          0.02       1.23 f
-  U4179/Y (OAI21X1)                        0.05       1.28 r
-  U896/Y (OR2X1)                           0.06       1.34 r
-  U4180/Y (INVX1)                          0.02       1.36 f
-  U4181/Y (OAI21X1)                        0.05       1.41 r
-  U894/Y (OR2X1)                           0.06       1.47 r
-  U4182/Y (INVX1)                          0.02       1.49 f
-  U4184/Y (OAI21X1)                        0.05       1.54 r
-  U892/Y (OR2X1)                           0.06       1.59 r
-  U4185/Y (INVX1)                          0.02       1.61 f
-  U4186/Y (OAI21X1)                        0.05       1.66 r
-  U889/Y (OR2X1)                           0.06       1.72 r
-  U4187/Y (INVX1)                          0.02       1.74 f
-  U4189/Y (OAI21X1)                        0.05       1.79 r
-  U887/Y (OR2X1)                           0.06       1.85 r
-  U4190/Y (INVX1)                          0.02       1.87 f
-  U4191/Y (OAI21X1)                        0.05       1.92 r
-  U884/Y (OR2X1)                           0.06       1.97 r
-  U4192/Y (INVX1)                          0.02       1.99 f
-  U4194/Y (OAI21X1)                        0.05       2.04 r
-  U881/Y (OR2X1)                           0.06       2.10 r
-  U4195/Y (INVX1)                          0.02       2.12 f
-  U4196/Y (OAI21X1)                        0.05       2.17 r
-  U879/Y (OR2X1)                           0.06       2.23 r
-  U4197/Y (INVX1)                          0.02       2.25 f
-  U4199/Y (OAI21X1)                        0.05       2.30 r
-  U876/Y (OR2X1)                           0.06       2.35 r
-  U4200/Y (INVX1)                          0.02       2.37 f
-  U4202/Y (OAI21X1)                        0.05       2.42 r
-  U874/Y (OR2X1)                           0.06       2.48 r
-  U4203/Y (INVX1)                          0.02       2.50 f
-  U4205/Y (OAI21X1)                        0.05       2.55 r
-  U871/Y (OR2X1)                           0.06       2.61 r
-  U4206/Y (INVX1)                          0.02       2.63 f
-  U4208/Y (OAI21X1)                        0.05       2.68 r
-  U869/Y (OR2X1)                           0.06       2.73 r
-  U4209/Y (INVX1)                          0.02       2.75 f
-  U4211/Y (OAI21X1)                        0.05       2.80 r
-  U866/Y (OR2X1)                           0.06       2.86 r
-  U4212/Y (INVX1)                          0.02       2.88 f
-  U4214/Y (OAI21X1)                        0.05       2.93 r
-  U864/Y (OR2X1)                           0.06       2.99 r
-  U4215/Y (INVX1)                          0.02       3.01 f
-  U4217/Y (OAI21X1)                        0.05       3.06 r
-  U862/Y (OR2X1)                           0.06       3.11 r
-  U4218/Y (INVX1)                          0.02       3.14 f
-  U4220/Y (OAI21X1)                        0.05       3.18 r
-  U859/Y (OR2X1)                           0.06       3.24 r
-  U4221/Y (INVX1)                          0.02       3.26 f
-  U4223/Y (OAI21X1)                        0.05       3.31 r
-  U856/Y (OR2X1)                           0.06       3.37 r
-  U4224/Y (INVX1)                          0.02       3.39 f
-  U4226/Y (OAI21X1)                        0.05       3.44 r
-  U854/Y (OR2X1)                           0.06       3.49 r
-  U4227/Y (INVX1)                          0.02       3.51 f
-  U4229/Y (OAI21X1)                        0.05       3.57 r
-  U851/Y (OR2X1)                           0.06       3.62 r
-  U4230/Y (INVX1)                          0.02       3.64 f
-  U4232/Y (OAI21X1)                        0.05       3.69 r
-  U849/Y (OR2X1)                           0.06       3.75 r
-  U4233/Y (INVX1)                          0.02       3.77 f
-  U4235/Y (OAI21X1)                        0.05       3.82 r
-  U847/Y (OR2X1)                           0.06       3.87 r
-  U4236/Y (INVX1)                          0.02       3.90 f
-  U4238/Y (OAI21X1)                        0.05       3.95 r
-  U844/Y (OR2X1)                           0.06       4.00 r
-  U4239/Y (INVX1)                          0.02       4.02 f
-  U4241/Y (OAI21X1)                        0.05       4.07 r
-  U842/Y (OR2X1)                           0.06       4.13 r
-  U4242/Y (INVX1)                          0.02       4.15 f
-  U4244/Y (OAI21X1)                        0.05       4.20 r
-  U839/Y (OR2X1)                           0.06       4.25 r
-  U4245/Y (INVX1)                          0.02       4.28 f
-  U4247/Y (OAI21X1)                        0.05       4.33 r
-  U837/Y (OR2X1)                           0.06       4.38 r
-  U4248/Y (INVX1)                          0.02       4.40 f
-  U4250/Y (OAI21X1)                        0.05       4.45 r
-  U834/Y (OR2X1)                           0.06       4.51 r
-  U4251/Y (INVX1)                          0.02       4.53 f
-  U4253/Y (OAI21X1)                        0.05       4.58 r
-  U832/Y (OR2X1)                           0.06       4.63 r
-  U4254/Y (INVX1)                          0.02       4.66 f
-  U4256/Y (OAI21X1)                        0.05       4.71 r
-  U829/Y (OR2X1)                           0.06       4.76 r
-  U4257/Y (INVX1)                          0.02       4.78 f
-  U4259/Y (OAI21X1)                        0.05       4.83 r
-  U827/Y (OR2X1)                           0.06       4.89 r
-  U4260/Y (INVX1)                          0.02       4.91 f
-  U4262/Y (OAI21X1)                        0.05       4.96 r
-  U824/Y (OR2X1)                           0.06       5.01 r
-  U4263/Y (INVX1)                          0.02       5.04 f
-  U4265/Y (OAI21X1)                        0.05       5.09 r
-  U822/Y (OR2X1)                           0.06       5.14 r
-  U4266/Y (INVX1)                          0.02       5.16 f
-  U4268/Y (OAI21X1)                        0.05       5.21 r
-  U819/Y (OR2X1)                           0.06       5.27 r
-  U4269/Y (INVX1)                          0.02       5.29 f
-  U4271/Y (OAI21X1)                        0.05       5.34 r
-  U816/Y (OR2X1)                           0.06       5.40 r
-  U4272/Y (INVX1)                          0.02       5.42 f
-  U4274/Y (OAI21X1)                        0.05       5.47 r
-  U814/Y (OR2X1)                           0.06       5.52 r
-  U4275/Y (INVX1)                          0.02       5.54 f
-  U4277/Y (OAI21X1)                        0.05       5.59 r
-  U812/Y (OR2X1)                           0.06       5.65 r
-  U4278/Y (INVX1)                          0.02       5.67 f
-  U4280/Y (OAI21X1)                        0.05       5.72 r
-  U809/Y (OR2X1)                           0.06       5.78 r
-  U4281/Y (INVX1)                          0.02       5.80 f
-  U4283/Y (OAI21X1)                        0.05       5.85 r
-  U806/Y (OR2X1)                           0.06       5.90 r
-  U4284/Y (INVX1)                          0.02       5.92 f
-  U4286/Y (OAI21X1)                        0.05       5.97 r
-  U804/Y (OR2X1)                           0.06       6.03 r
-  U4287/Y (INVX1)                          0.02       6.05 f
-  U4289/Y (OAI21X1)                        0.05       6.10 r
-  U802/Y (OR2X1)                           0.06       6.16 r
-  U4290/Y (INVX1)                          0.02       6.18 f
-  U4292/Y (OAI21X1)                        0.05       6.23 r
-  U799/Y (OR2X1)                           0.06       6.28 r
-  U4293/Y (INVX1)                          0.02       6.30 f
-  U4295/Y (OAI21X1)                        0.05       6.35 r
-  U797/Y (OR2X1)                           0.06       6.41 r
-  U4296/Y (INVX1)                          0.02       6.43 f
-  U4298/Y (OAI21X1)                        0.05       6.48 r
-  U794/Y (OR2X1)                           0.06       6.54 r
-  U4299/Y (INVX1)                          0.02       6.56 f
-  U4301/Y (OAI21X1)                        0.05       6.61 r
-  U791/Y (OR2X1)                           0.06       6.66 r
-  U4302/Y (INVX1)                          0.02       6.68 f
-  U4304/Y (OAI21X1)                        0.05       6.73 r
-  U789/Y (OR2X1)                           0.06       6.79 r
-  U4305/Y (INVX1)                          0.02       6.81 f
-  U4307/Y (OAI21X1)                        0.05       6.86 r
-  U787/Y (OR2X1)                           0.06       6.92 r
-  U4308/Y (INVX1)                          0.02       6.94 f
-  U4310/Y (OAI21X1)                        0.05       6.99 r
-  U784/Y (OR2X1)                           0.06       7.04 r
-  U4311/Y (INVX1)                          0.02       7.06 f
-  U4313/Y (OAI21X1)                        0.05       7.11 r
-  U781/Y (OR2X1)                           0.06       7.17 r
-  U4314/Y (INVX1)                          0.02       7.19 f
-  U4316/Y (OAI21X1)                        0.05       7.24 r
-  U779/Y (OR2X1)                           0.06       7.30 r
-  U4317/Y (INVX1)                          0.02       7.32 f
-  U4319/Y (OAI21X1)                        0.05       7.37 r
-  U776/Y (OR2X1)                           0.06       7.42 r
-  U4320/Y (INVX1)                          0.02       7.44 f
-  U4322/Y (OAI21X1)                        0.05       7.49 r
-  U774/Y (OR2X1)                           0.06       7.55 r
-  U4323/Y (INVX1)                          0.02       7.57 f
-  U4325/Y (OAI21X1)                        0.05       7.62 r
-  U771/Y (OR2X1)                           0.06       7.68 r
-  U4326/Y (INVX1)                          0.02       7.70 f
-  U4328/Y (OAI21X1)                        0.05       7.75 r
-  U769/Y (OR2X1)                           0.06       7.80 r
-  U4329/Y (INVX1)                          0.02       7.82 f
-  U4331/Y (OAI21X1)                        0.05       7.87 r
-  U766/Y (OR2X1)                           0.06       7.93 r
-  U4332/Y (INVX1)                          0.02       7.95 f
-  U4334/Y (OAI21X1)                        0.05       8.00 r
-  U764/Y (OR2X1)                           0.06       8.06 r
-  U4335/Y (INVX1)                          0.02       8.08 f
-  U4337/Y (OAI21X1)                        0.05       8.13 r
-  U761/Y (OR2X1)                           0.06       8.18 r
-  U4338/Y (INVX1)                          0.02       8.20 f
-  U4340/Y (OAI21X1)                        0.05       8.25 r
-  U759/Y (OR2X1)                           0.06       8.31 r
-  U4341/Y (INVX1)                          0.02       8.33 f
-  U4344/Y (OAI21X1)                        0.05       8.38 r
-  U756/Y (OR2X1)                           0.06       8.44 r
-  U4345/Y (INVX1)                          0.02       8.46 f
-  U4347/Y (OAI21X1)                        0.05       8.51 r
-  U754/Y (OR2X1)                           0.06       8.56 r
-  U4348/Y (INVX1)                          0.02       8.58 f
-  U4351/Y (OAI21X1)                        0.05       8.63 r
-  U753/Y (OR2X1)                           0.06       8.69 r
-  U4352/Y (INVX1)                          0.02       8.71 f
-  U4354/Y (OAI21X1)                        0.05       8.76 r
-  U750/Y (OR2X1)                           0.06       8.82 r
-  U749/Y (AND2X1)                          0.03       8.85 r
-  U1541/Y (INVX1)                          0.03       8.88 f
-  U4356/YS (FAX1)                          0.07       8.95 r
-  rdi_reg[68]/D (DFFSR)                    0.00       8.95 r
-  data arrival time                                   8.95
-
-  clock clk (rise edge)                   40.00      40.00
-  clock network delay (ideal)              0.00      40.00
-  clock uncertainty                       -0.25      39.75
-  rdi_reg[68]/CLK (DFFSR)                  0.00      39.75 r
-  library setup time                      -0.08      39.67
-  data required time                                 39.67
-  -----------------------------------------------------------
-  data required time                                 39.67
-  data arrival time                                  -8.95
-  -----------------------------------------------------------
-  slack (MET)                                        30.72
-
-
-  Startpoint: DL00_d2_reg[1]
-              (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: rdi_reg[69]
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: max
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  DL00_d2_reg[1]/CLK (DFFSR)               0.00 #     0.00 r
-  DL00_d2_reg[1]/Q (DFFSR)                 0.11       0.11 r
-  U1625/Y (BUFX2)                          0.05       0.15 r
-  intadd_131/U4/YS (FAX1)                  0.11       0.26 r
-  intadd_58/U5/YS (FAX1)                   0.08       0.34 r
-  U1142/Y (INVX1)                          0.03       0.38 f
-  intadd_191/U3/YC (FAX1)                  0.09       0.47 f
-  intadd_191/U2/YS (FAX1)                  0.08       0.55 f
-  U4159/Y (NAND2X1)                        0.03       0.59 r
-  U4162/Y (AOI21X1)                        0.03       0.62 f
-  U4163/Y (NAND2X1)                        0.04       0.65 r
-  U4166/Y (AOI21X1)                        0.03       0.68 f
-  U4167/Y (NAND2X1)                        0.02       0.70 r
-  U4168/Y (INVX1)                          0.02       0.73 f
-  U4169/Y (OAI21X1)                        0.05       0.78 r
-  U1007/Y (OR2X1)                          0.06       0.83 r
-  U4170/Y (INVX1)                          0.02       0.85 f
-  U4171/Y (OAI21X1)                        0.05       0.90 r
-  U987/Y (OR2X1)                           0.06       0.96 r
-  U4172/Y (INVX1)                          0.02       0.98 f
-  U4174/Y (OAI21X1)                        0.05       1.03 r
-  U901/Y (OR2X1)                           0.06       1.09 r
-  U4175/Y (INVX1)                          0.02       1.11 f
-  U4176/Y (OAI21X1)                        0.05       1.16 r
-  U899/Y (OR2X1)                           0.06       1.21 r
-  U4177/Y (INVX1)                          0.02       1.23 f
-  U4179/Y (OAI21X1)                        0.05       1.28 r
-  U896/Y (OR2X1)                           0.06       1.34 r
-  U4180/Y (INVX1)                          0.02       1.36 f
-  U4181/Y (OAI21X1)                        0.05       1.41 r
-  U894/Y (OR2X1)                           0.06       1.47 r
-  U4182/Y (INVX1)                          0.02       1.49 f
-  U4184/Y (OAI21X1)                        0.05       1.54 r
-  U892/Y (OR2X1)                           0.06       1.59 r
-  U4185/Y (INVX1)                          0.02       1.61 f
-  U4186/Y (OAI21X1)                        0.05       1.66 r
-  U889/Y (OR2X1)                           0.06       1.72 r
-  U4187/Y (INVX1)                          0.02       1.74 f
-  U4189/Y (OAI21X1)                        0.05       1.79 r
-  U887/Y (OR2X1)                           0.06       1.85 r
-  U4190/Y (INVX1)                          0.02       1.87 f
-  U4191/Y (OAI21X1)                        0.05       1.92 r
-  U884/Y (OR2X1)                           0.06       1.97 r
-  U4192/Y (INVX1)                          0.02       1.99 f
-  U4194/Y (OAI21X1)                        0.05       2.04 r
-  U881/Y (OR2X1)                           0.06       2.10 r
-  U4195/Y (INVX1)                          0.02       2.12 f
-  U4196/Y (OAI21X1)                        0.05       2.17 r
-  U879/Y (OR2X1)                           0.06       2.23 r
-  U4197/Y (INVX1)                          0.02       2.25 f
-  U4199/Y (OAI21X1)                        0.05       2.30 r
-  U876/Y (OR2X1)                           0.06       2.35 r
-  U4200/Y (INVX1)                          0.02       2.37 f
-  U4202/Y (OAI21X1)                        0.05       2.42 r
-  U874/Y (OR2X1)                           0.06       2.48 r
-  U4203/Y (INVX1)                          0.02       2.50 f
-  U4205/Y (OAI21X1)                        0.05       2.55 r
-  U871/Y (OR2X1)                           0.06       2.61 r
-  U4206/Y (INVX1)                          0.02       2.63 f
-  U4208/Y (OAI21X1)                        0.05       2.68 r
-  U869/Y (OR2X1)                           0.06       2.73 r
-  U4209/Y (INVX1)                          0.02       2.75 f
-  U4211/Y (OAI21X1)                        0.05       2.80 r
-  U866/Y (OR2X1)                           0.06       2.86 r
-  U4212/Y (INVX1)                          0.02       2.88 f
-  U4214/Y (OAI21X1)                        0.05       2.93 r
-  U864/Y (OR2X1)                           0.06       2.99 r
-  U4215/Y (INVX1)                          0.02       3.01 f
-  U4217/Y (OAI21X1)                        0.05       3.06 r
-  U862/Y (OR2X1)                           0.06       3.11 r
-  U4218/Y (INVX1)                          0.02       3.14 f
-  U4220/Y (OAI21X1)                        0.05       3.18 r
-  U859/Y (OR2X1)                           0.06       3.24 r
-  U4221/Y (INVX1)                          0.02       3.26 f
-  U4223/Y (OAI21X1)                        0.05       3.31 r
-  U856/Y (OR2X1)                           0.06       3.37 r
-  U4224/Y (INVX1)                          0.02       3.39 f
-  U4226/Y (OAI21X1)                        0.05       3.44 r
-  U854/Y (OR2X1)                           0.06       3.49 r
-  U4227/Y (INVX1)                          0.02       3.51 f
-  U4229/Y (OAI21X1)                        0.05       3.57 r
-  U851/Y (OR2X1)                           0.06       3.62 r
-  U4230/Y (INVX1)                          0.02       3.64 f
-  U4232/Y (OAI21X1)                        0.05       3.69 r
-  U849/Y (OR2X1)                           0.06       3.75 r
-  U4233/Y (INVX1)                          0.02       3.77 f
-  U4235/Y (OAI21X1)                        0.05       3.82 r
-  U847/Y (OR2X1)                           0.06       3.87 r
-  U4236/Y (INVX1)                          0.02       3.90 f
-  U4238/Y (OAI21X1)                        0.05       3.95 r
-  U844/Y (OR2X1)                           0.06       4.00 r
-  U4239/Y (INVX1)                          0.02       4.02 f
-  U4241/Y (OAI21X1)                        0.05       4.07 r
-  U842/Y (OR2X1)                           0.06       4.13 r
-  U4242/Y (INVX1)                          0.02       4.15 f
-  U4244/Y (OAI21X1)                        0.05       4.20 r
-  U839/Y (OR2X1)                           0.06       4.25 r
-  U4245/Y (INVX1)                          0.02       4.28 f
-  U4247/Y (OAI21X1)                        0.05       4.33 r
-  U837/Y (OR2X1)                           0.06       4.38 r
-  U4248/Y (INVX1)                          0.02       4.40 f
-  U4250/Y (OAI21X1)                        0.05       4.45 r
-  U834/Y (OR2X1)                           0.06       4.51 r
-  U4251/Y (INVX1)                          0.02       4.53 f
-  U4253/Y (OAI21X1)                        0.05       4.58 r
-  U832/Y (OR2X1)                           0.06       4.63 r
-  U4254/Y (INVX1)                          0.02       4.66 f
-  U4256/Y (OAI21X1)                        0.05       4.71 r
-  U829/Y (OR2X1)                           0.06       4.76 r
-  U4257/Y (INVX1)                          0.02       4.78 f
-  U4259/Y (OAI21X1)                        0.05       4.83 r
-  U827/Y (OR2X1)                           0.06       4.89 r
-  U4260/Y (INVX1)                          0.02       4.91 f
-  U4262/Y (OAI21X1)                        0.05       4.96 r
-  U824/Y (OR2X1)                           0.06       5.01 r
-  U4263/Y (INVX1)                          0.02       5.04 f
-  U4265/Y (OAI21X1)                        0.05       5.09 r
-  U822/Y (OR2X1)                           0.06       5.14 r
-  U4266/Y (INVX1)                          0.02       5.16 f
-  U4268/Y (OAI21X1)                        0.05       5.21 r
-  U819/Y (OR2X1)                           0.06       5.27 r
-  U4269/Y (INVX1)                          0.02       5.29 f
-  U4271/Y (OAI21X1)                        0.05       5.34 r
-  U816/Y (OR2X1)                           0.06       5.40 r
-  U4272/Y (INVX1)                          0.02       5.42 f
-  U4274/Y (OAI21X1)                        0.05       5.47 r
-  U814/Y (OR2X1)                           0.06       5.52 r
-  U4275/Y (INVX1)                          0.02       5.54 f
-  U4277/Y (OAI21X1)                        0.05       5.59 r
-  U812/Y (OR2X1)                           0.06       5.65 r
-  U4278/Y (INVX1)                          0.02       5.67 f
-  U4280/Y (OAI21X1)                        0.05       5.72 r
-  U809/Y (OR2X1)                           0.06       5.78 r
-  U4281/Y (INVX1)                          0.02       5.80 f
-  U4283/Y (OAI21X1)                        0.05       5.85 r
-  U806/Y (OR2X1)                           0.06       5.90 r
-  U4284/Y (INVX1)                          0.02       5.92 f
-  U4286/Y (OAI21X1)                        0.05       5.97 r
-  U804/Y (OR2X1)                           0.06       6.03 r
-  U4287/Y (INVX1)                          0.02       6.05 f
-  U4289/Y (OAI21X1)                        0.05       6.10 r
-  U802/Y (OR2X1)                           0.06       6.16 r
-  U4290/Y (INVX1)                          0.02       6.18 f
-  U4292/Y (OAI21X1)                        0.05       6.23 r
-  U799/Y (OR2X1)                           0.06       6.28 r
-  U4293/Y (INVX1)                          0.02       6.30 f
-  U4295/Y (OAI21X1)                        0.05       6.35 r
-  U797/Y (OR2X1)                           0.06       6.41 r
-  U4296/Y (INVX1)                          0.02       6.43 f
-  U4298/Y (OAI21X1)                        0.05       6.48 r
-  U794/Y (OR2X1)                           0.06       6.54 r
-  U4299/Y (INVX1)                          0.02       6.56 f
-  U4301/Y (OAI21X1)                        0.05       6.61 r
-  U791/Y (OR2X1)                           0.06       6.66 r
-  U4302/Y (INVX1)                          0.02       6.68 f
-  U4304/Y (OAI21X1)                        0.05       6.73 r
-  U789/Y (OR2X1)                           0.06       6.79 r
-  U4305/Y (INVX1)                          0.02       6.81 f
-  U4307/Y (OAI21X1)                        0.05       6.86 r
-  U787/Y (OR2X1)                           0.06       6.92 r
-  U4308/Y (INVX1)                          0.02       6.94 f
-  U4310/Y (OAI21X1)                        0.05       6.99 r
-  U784/Y (OR2X1)                           0.06       7.04 r
-  U4311/Y (INVX1)                          0.02       7.06 f
-  U4313/Y (OAI21X1)                        0.05       7.11 r
-  U781/Y (OR2X1)                           0.06       7.17 r
-  U4314/Y (INVX1)                          0.02       7.19 f
-  U4316/Y (OAI21X1)                        0.05       7.24 r
-  U779/Y (OR2X1)                           0.06       7.30 r
-  U4317/Y (INVX1)                          0.02       7.32 f
-  U4319/Y (OAI21X1)                        0.05       7.37 r
-  U776/Y (OR2X1)                           0.06       7.42 r
-  U4320/Y (INVX1)                          0.02       7.44 f
-  U4322/Y (OAI21X1)                        0.05       7.49 r
-  U774/Y (OR2X1)                           0.06       7.55 r
-  U4323/Y (INVX1)                          0.02       7.57 f
-  U4325/Y (OAI21X1)                        0.05       7.62 r
-  U771/Y (OR2X1)                           0.06       7.68 r
-  U4326/Y (INVX1)                          0.02       7.70 f
-  U4328/Y (OAI21X1)                        0.05       7.75 r
-  U769/Y (OR2X1)                           0.06       7.80 r
-  U4329/Y (INVX1)                          0.02       7.82 f
-  U4331/Y (OAI21X1)                        0.05       7.87 r
-  U766/Y (OR2X1)                           0.06       7.93 r
-  U4332/Y (INVX1)                          0.02       7.95 f
-  U4334/Y (OAI21X1)                        0.05       8.00 r
-  U764/Y (OR2X1)                           0.06       8.06 r
-  U4335/Y (INVX1)                          0.02       8.08 f
-  U4337/Y (OAI21X1)                        0.05       8.13 r
-  U761/Y (OR2X1)                           0.06       8.18 r
-  U4338/Y (INVX1)                          0.02       8.20 f
-  U4340/Y (OAI21X1)                        0.05       8.25 r
-  U759/Y (OR2X1)                           0.06       8.31 r
-  U4341/Y (INVX1)                          0.02       8.33 f
-  U4344/Y (OAI21X1)                        0.05       8.38 r
-  U756/Y (OR2X1)                           0.06       8.44 r
-  U4345/Y (INVX1)                          0.02       8.46 f
-  U4347/Y (OAI21X1)                        0.05       8.51 r
-  U754/Y (OR2X1)                           0.06       8.56 r
-  U4348/Y (INVX1)                          0.02       8.58 f
-  U4351/Y (OAI21X1)                        0.05       8.63 r
-  U753/Y (OR2X1)                           0.06       8.69 r
-  U4352/Y (INVX1)                          0.02       8.71 f
-  U4354/Y (OAI21X1)                        0.05       8.76 r
-  U750/Y (OR2X1)                           0.06       8.82 r
-  U4715/Y (AOI21X1)                        0.02       8.84 f
-  U498/Y (BUFX2)                           0.04       8.88 f
-  U4716/Y (XNOR2X1)                        0.03       8.91 r
-  rdi_reg[69]/D (DFFSR)                    0.00       8.91 r
-  data arrival time                                   8.91
-
-  clock clk (rise edge)                   40.00      40.00
-  clock network delay (ideal)              0.00      40.00
-  clock uncertainty                       -0.25      39.75
-  rdi_reg[69]/CLK (DFFSR)                  0.00      39.75 r
-  library setup time                      -0.08      39.67
-  data required time                                 39.67
-  -----------------------------------------------------------
-  data required time                                 39.67
-  data arrival time                                  -8.91
-  -----------------------------------------------------------
-  slack (MET)                                        30.76
-
-
-  Startpoint: DL00_d2_reg[1]
-              (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: rdi_reg[67]
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: max
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  DL00_d2_reg[1]/CLK (DFFSR)               0.00 #     0.00 r
-  DL00_d2_reg[1]/Q (DFFSR)                 0.11       0.11 r
-  U1625/Y (BUFX2)                          0.05       0.15 r
-  intadd_131/U4/YS (FAX1)                  0.11       0.26 r
-  intadd_58/U5/YS (FAX1)                   0.08       0.34 r
-  U1142/Y (INVX1)                          0.03       0.38 f
-  intadd_191/U3/YC (FAX1)                  0.09       0.47 f
-  intadd_191/U2/YS (FAX1)                  0.08       0.55 f
-  U4159/Y (NAND2X1)                        0.03       0.59 r
-  U4162/Y (AOI21X1)                        0.03       0.62 f
-  U4163/Y (NAND2X1)                        0.04       0.65 r
-  U4166/Y (AOI21X1)                        0.03       0.68 f
-  U4167/Y (NAND2X1)                        0.02       0.70 r
-  U4168/Y (INVX1)                          0.02       0.73 f
-  U4169/Y (OAI21X1)                        0.05       0.78 r
-  U1007/Y (OR2X1)                          0.06       0.83 r
-  U4170/Y (INVX1)                          0.02       0.85 f
-  U4171/Y (OAI21X1)                        0.05       0.90 r
-  U987/Y (OR2X1)                           0.06       0.96 r
-  U4172/Y (INVX1)                          0.02       0.98 f
-  U4174/Y (OAI21X1)                        0.05       1.03 r
-  U901/Y (OR2X1)                           0.06       1.09 r
-  U4175/Y (INVX1)                          0.02       1.11 f
-  U4176/Y (OAI21X1)                        0.05       1.16 r
-  U899/Y (OR2X1)                           0.06       1.21 r
-  U4177/Y (INVX1)                          0.02       1.23 f
-  U4179/Y (OAI21X1)                        0.05       1.28 r
-  U896/Y (OR2X1)                           0.06       1.34 r
-  U4180/Y (INVX1)                          0.02       1.36 f
-  U4181/Y (OAI21X1)                        0.05       1.41 r
-  U894/Y (OR2X1)                           0.06       1.47 r
-  U4182/Y (INVX1)                          0.02       1.49 f
-  U4184/Y (OAI21X1)                        0.05       1.54 r
-  U892/Y (OR2X1)                           0.06       1.59 r
-  U4185/Y (INVX1)                          0.02       1.61 f
-  U4186/Y (OAI21X1)                        0.05       1.66 r
-  U889/Y (OR2X1)                           0.06       1.72 r
-  U4187/Y (INVX1)                          0.02       1.74 f
-  U4189/Y (OAI21X1)                        0.05       1.79 r
-  U887/Y (OR2X1)                           0.06       1.85 r
-  U4190/Y (INVX1)                          0.02       1.87 f
-  U4191/Y (OAI21X1)                        0.05       1.92 r
-  U884/Y (OR2X1)                           0.06       1.97 r
-  U4192/Y (INVX1)                          0.02       1.99 f
-  U4194/Y (OAI21X1)                        0.05       2.04 r
-  U881/Y (OR2X1)                           0.06       2.10 r
-  U4195/Y (INVX1)                          0.02       2.12 f
-  U4196/Y (OAI21X1)                        0.05       2.17 r
-  U879/Y (OR2X1)                           0.06       2.23 r
-  U4197/Y (INVX1)                          0.02       2.25 f
-  U4199/Y (OAI21X1)                        0.05       2.30 r
-  U876/Y (OR2X1)                           0.06       2.35 r
-  U4200/Y (INVX1)                          0.02       2.37 f
-  U4202/Y (OAI21X1)                        0.05       2.42 r
-  U874/Y (OR2X1)                           0.06       2.48 r
-  U4203/Y (INVX1)                          0.02       2.50 f
-  U4205/Y (OAI21X1)                        0.05       2.55 r
-  U871/Y (OR2X1)                           0.06       2.61 r
-  U4206/Y (INVX1)                          0.02       2.63 f
-  U4208/Y (OAI21X1)                        0.05       2.68 r
-  U869/Y (OR2X1)                           0.06       2.73 r
-  U4209/Y (INVX1)                          0.02       2.75 f
-  U4211/Y (OAI21X1)                        0.05       2.80 r
-  U866/Y (OR2X1)                           0.06       2.86 r
-  U4212/Y (INVX1)                          0.02       2.88 f
-  U4214/Y (OAI21X1)                        0.05       2.93 r
-  U864/Y (OR2X1)                           0.06       2.99 r
-  U4215/Y (INVX1)                          0.02       3.01 f
-  U4217/Y (OAI21X1)                        0.05       3.06 r
-  U862/Y (OR2X1)                           0.06       3.11 r
-  U4218/Y (INVX1)                          0.02       3.14 f
-  U4220/Y (OAI21X1)                        0.05       3.18 r
-  U859/Y (OR2X1)                           0.06       3.24 r
-  U4221/Y (INVX1)                          0.02       3.26 f
-  U4223/Y (OAI21X1)                        0.05       3.31 r
-  U856/Y (OR2X1)                           0.06       3.37 r
-  U4224/Y (INVX1)                          0.02       3.39 f
-  U4226/Y (OAI21X1)                        0.05       3.44 r
-  U854/Y (OR2X1)                           0.06       3.49 r
-  U4227/Y (INVX1)                          0.02       3.51 f
-  U4229/Y (OAI21X1)                        0.05       3.57 r
-  U851/Y (OR2X1)                           0.06       3.62 r
-  U4230/Y (INVX1)                          0.02       3.64 f
-  U4232/Y (OAI21X1)                        0.05       3.69 r
-  U849/Y (OR2X1)                           0.06       3.75 r
-  U4233/Y (INVX1)                          0.02       3.77 f
-  U4235/Y (OAI21X1)                        0.05       3.82 r
-  U847/Y (OR2X1)                           0.06       3.87 r
-  U4236/Y (INVX1)                          0.02       3.90 f
-  U4238/Y (OAI21X1)                        0.05       3.95 r
-  U844/Y (OR2X1)                           0.06       4.00 r
-  U4239/Y (INVX1)                          0.02       4.02 f
-  U4241/Y (OAI21X1)                        0.05       4.07 r
-  U842/Y (OR2X1)                           0.06       4.13 r
-  U4242/Y (INVX1)                          0.02       4.15 f
-  U4244/Y (OAI21X1)                        0.05       4.20 r
-  U839/Y (OR2X1)                           0.06       4.25 r
-  U4245/Y (INVX1)                          0.02       4.28 f
-  U4247/Y (OAI21X1)                        0.05       4.33 r
-  U837/Y (OR2X1)                           0.06       4.38 r
-  U4248/Y (INVX1)                          0.02       4.40 f
-  U4250/Y (OAI21X1)                        0.05       4.45 r
-  U834/Y (OR2X1)                           0.06       4.51 r
-  U4251/Y (INVX1)                          0.02       4.53 f
-  U4253/Y (OAI21X1)                        0.05       4.58 r
-  U832/Y (OR2X1)                           0.06       4.63 r
-  U4254/Y (INVX1)                          0.02       4.66 f
-  U4256/Y (OAI21X1)                        0.05       4.71 r
-  U829/Y (OR2X1)                           0.06       4.76 r
-  U4257/Y (INVX1)                          0.02       4.78 f
-  U4259/Y (OAI21X1)                        0.05       4.83 r
-  U827/Y (OR2X1)                           0.06       4.89 r
-  U4260/Y (INVX1)                          0.02       4.91 f
-  U4262/Y (OAI21X1)                        0.05       4.96 r
-  U824/Y (OR2X1)                           0.06       5.01 r
-  U4263/Y (INVX1)                          0.02       5.04 f
-  U4265/Y (OAI21X1)                        0.05       5.09 r
-  U822/Y (OR2X1)                           0.06       5.14 r
-  U4266/Y (INVX1)                          0.02       5.16 f
-  U4268/Y (OAI21X1)                        0.05       5.21 r
-  U819/Y (OR2X1)                           0.06       5.27 r
-  U4269/Y (INVX1)                          0.02       5.29 f
-  U4271/Y (OAI21X1)                        0.05       5.34 r
-  U816/Y (OR2X1)                           0.06       5.40 r
-  U4272/Y (INVX1)                          0.02       5.42 f
-  U4274/Y (OAI21X1)                        0.05       5.47 r
-  U814/Y (OR2X1)                           0.06       5.52 r
-  U4275/Y (INVX1)                          0.02       5.54 f
-  U4277/Y (OAI21X1)                        0.05       5.59 r
-  U812/Y (OR2X1)                           0.06       5.65 r
-  U4278/Y (INVX1)                          0.02       5.67 f
-  U4280/Y (OAI21X1)                        0.05       5.72 r
-  U809/Y (OR2X1)                           0.06       5.78 r
-  U4281/Y (INVX1)                          0.02       5.80 f
-  U4283/Y (OAI21X1)                        0.05       5.85 r
-  U806/Y (OR2X1)                           0.06       5.90 r
-  U4284/Y (INVX1)                          0.02       5.92 f
-  U4286/Y (OAI21X1)                        0.05       5.97 r
-  U804/Y (OR2X1)                           0.06       6.03 r
-  U4287/Y (INVX1)                          0.02       6.05 f
-  U4289/Y (OAI21X1)                        0.05       6.10 r
-  U802/Y (OR2X1)                           0.06       6.16 r
-  U4290/Y (INVX1)                          0.02       6.18 f
-  U4292/Y (OAI21X1)                        0.05       6.23 r
-  U799/Y (OR2X1)                           0.06       6.28 r
-  U4293/Y (INVX1)                          0.02       6.30 f
-  U4295/Y (OAI21X1)                        0.05       6.35 r
-  U797/Y (OR2X1)                           0.06       6.41 r
-  U4296/Y (INVX1)                          0.02       6.43 f
-  U4298/Y (OAI21X1)                        0.05       6.48 r
-  U794/Y (OR2X1)                           0.06       6.54 r
-  U4299/Y (INVX1)                          0.02       6.56 f
-  U4301/Y (OAI21X1)                        0.05       6.61 r
-  U791/Y (OR2X1)                           0.06       6.66 r
-  U4302/Y (INVX1)                          0.02       6.68 f
-  U4304/Y (OAI21X1)                        0.05       6.73 r
-  U789/Y (OR2X1)                           0.06       6.79 r
-  U4305/Y (INVX1)                          0.02       6.81 f
-  U4307/Y (OAI21X1)                        0.05       6.86 r
-  U787/Y (OR2X1)                           0.06       6.92 r
-  U4308/Y (INVX1)                          0.02       6.94 f
-  U4310/Y (OAI21X1)                        0.05       6.99 r
-  U784/Y (OR2X1)                           0.06       7.04 r
-  U4311/Y (INVX1)                          0.02       7.06 f
-  U4313/Y (OAI21X1)                        0.05       7.11 r
-  U781/Y (OR2X1)                           0.06       7.17 r
-  U4314/Y (INVX1)                          0.02       7.19 f
-  U4316/Y (OAI21X1)                        0.05       7.24 r
-  U779/Y (OR2X1)                           0.06       7.30 r
-  U4317/Y (INVX1)                          0.02       7.32 f
-  U4319/Y (OAI21X1)                        0.05       7.37 r
-  U776/Y (OR2X1)                           0.06       7.42 r
-  U4320/Y (INVX1)                          0.02       7.44 f
-  U4322/Y (OAI21X1)                        0.05       7.49 r
-  U774/Y (OR2X1)                           0.06       7.55 r
-  U4323/Y (INVX1)                          0.02       7.57 f
-  U4325/Y (OAI21X1)                        0.05       7.62 r
-  U771/Y (OR2X1)                           0.06       7.68 r
-  U4326/Y (INVX1)                          0.02       7.70 f
-  U4328/Y (OAI21X1)                        0.05       7.75 r
-  U769/Y (OR2X1)                           0.06       7.80 r
-  U4329/Y (INVX1)                          0.02       7.82 f
-  U4331/Y (OAI21X1)                        0.05       7.87 r
-  U766/Y (OR2X1)                           0.06       7.93 r
-  U4332/Y (INVX1)                          0.02       7.95 f
-  U4334/Y (OAI21X1)                        0.05       8.00 r
-  U764/Y (OR2X1)                           0.06       8.06 r
-  U4335/Y (INVX1)                          0.02       8.08 f
-  U4337/Y (OAI21X1)                        0.05       8.13 r
-  U761/Y (OR2X1)                           0.06       8.18 r
-  U4338/Y (INVX1)                          0.02       8.20 f
-  U4340/Y (OAI21X1)                        0.05       8.25 r
-  U759/Y (OR2X1)                           0.06       8.31 r
-  U4341/Y (INVX1)                          0.02       8.33 f
-  U4344/Y (OAI21X1)                        0.05       8.38 r
-  U756/Y (OR2X1)                           0.06       8.44 r
-  U4345/Y (INVX1)                          0.02       8.46 f
-  U4347/Y (OAI21X1)                        0.05       8.51 r
-  U754/Y (OR2X1)                           0.06       8.56 r
-  U4348/Y (INVX1)                          0.02       8.58 f
-  U4351/Y (OAI21X1)                        0.05       8.63 r
-  U752/Y (AND2X1)                          0.04       8.67 r
-  U1534/Y (INVX1)                          0.02       8.70 f
-  U751/Y (AND2X1)                          0.04       8.74 f
-  U1497/Y (INVX1)                          0.03       8.77 r
-  U4357/YS (FAX1)                          0.09       8.85 f
-  U4358/Y (MUX2X1)                         0.04       8.89 r
-  rdi_reg[67]/D (DFFSR)                    0.00       8.89 r
-  data arrival time                                   8.89
-
-  clock clk (rise edge)                   40.00      40.00
-  clock network delay (ideal)              0.00      40.00
-  clock uncertainty                       -0.25      39.75
-  rdi_reg[67]/CLK (DFFSR)                  0.00      39.75 r
-  library setup time                      -0.08      39.67
-  data required time                                 39.67
-  -----------------------------------------------------------
-  data required time                                 39.67
-  data arrival time                                  -8.89
-  -----------------------------------------------------------
-  slack (MET)                                        30.77
-
-
-  Startpoint: ML00_reg[5]
-              (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: u_mult_3/U1_1_64
+  Endpoint: u_mult_2/clk_r_REG4_S2
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -1377,347 +891,696 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  ML00_reg[5]/CLK (DFFSR)                                 0.00 #     0.00 r
-  ML00_reg[5]/Q (DFFSR)                                   0.11       0.11 r
-  U2057/Y (INVX1)                                         0.02       0.13 f
-  U1303/Y (INVX1)                                         0.35       0.48 r
-  U2113/Y (NAND2X1)                                       0.13       0.61 f
-  U2115/Y (NAND3X1)                                       0.06       0.67 r
-  U2116/Y (OAI21X1)                                       0.02       0.69 f
-  U2117/Y (AOI21X1)                                       0.02       0.71 r
-  U2118/Y (OAI21X1)                                       0.02       0.73 f
-  U2120/Y (NAND3X1)                                       0.03       0.76 r
-  U2121/Y (OAI21X1)                                       0.02       0.78 f
-  U2124/Y (NAND3X1)                                       0.03       0.81 r
-  U2128/Y (AOI21X1)                                       0.03       0.84 f
-  U2129/Y (AOI21X1)                                       0.02       0.86 r
-  U2139/Y (AOI21X1)                                       0.03       0.89 f
-  U2155/Y (OAI21X1)                                       0.04       0.94 r
-  U2158/Y (NAND3X1)                                       0.02       0.96 f
-  U2161/Y (NAND3X1)                                       0.04       1.00 r
-  U2171/Y (OAI21X1)                                       0.02       1.02 f
-  U2172/Y (NAND2X1)                                       0.01       1.03 r
-  U2174/Y (NAND3X1)                                       0.02       1.05 f
-  U2176/Y (AOI22X1)                                       0.03       1.09 r
-  U2177/Y (INVX1)                                         0.21       1.29 f
-  U965/Y (INVX1)                                          0.38       1.67 r
-  U2697/Y (AOI22X1)                                       0.13       1.80 f
-  U2698/Y (INVX1)                                         0.68       2.47 r
-  u_mult_3/A[2] (hw1_10_DW02_mult_3_stage_J1_7)           0.00       2.47 r
-  u_mult_3/U78/Y (INVX1)                                  0.41       2.88 f
-  u_mult_3/U1918/Y (MUX2X1)                               0.18       3.07 r
-  u_mult_3/U61/Y (AND2X1)                                 0.30       3.37 r
-  u_mult_3/U2080/Y (AOI22X1)                              0.13       3.49 f
-  u_mult_3/U2081/Y (OAI21X1)                              0.05       3.55 r
-  u_mult_3/U2082/Y (MUX2X1)                               0.04       3.59 f
-  u_mult_3/U2145/YC (HAX1)                                0.11       3.69 f
-  u_mult_3/U2144/YC (HAX1)                                0.06       3.75 f
-  u_mult_3/U2143/YC (FAX1)                                0.08       3.83 f
-  u_mult_3/U2142/YC (FAX1)                                0.08       3.91 f
-  u_mult_3/U2141/YC (FAX1)                                0.08       3.99 f
-  u_mult_3/U2140/YC (FAX1)                                0.08       4.07 f
-  u_mult_3/U2139/YC (FAX1)                                0.08       4.16 f
-  u_mult_3/U2138/YC (FAX1)                                0.08       4.24 f
-  u_mult_3/U2137/YC (FAX1)                                0.08       4.32 f
-  u_mult_3/U2136/YC (FAX1)                                0.08       4.40 f
-  u_mult_3/U2135/YC (FAX1)                                0.08       4.48 f
-  u_mult_3/U2134/YC (FAX1)                                0.08       4.56 f
-  u_mult_3/U2133/YC (FAX1)                                0.08       4.64 f
-  u_mult_3/U2132/YC (FAX1)                                0.08       4.73 f
-  u_mult_3/U2131/YC (FAX1)                                0.08       4.81 f
-  u_mult_3/U2130/YC (FAX1)                                0.08       4.89 f
-  u_mult_3/U2129/YC (FAX1)                                0.08       4.97 f
-  u_mult_3/U2128/YC (FAX1)                                0.08       5.05 f
-  u_mult_3/U2127/YC (FAX1)                                0.08       5.13 f
-  u_mult_3/U2126/YC (FAX1)                                0.08       5.21 f
-  u_mult_3/U2125/YC (FAX1)                                0.08       5.30 f
-  u_mult_3/U2124/YC (FAX1)                                0.08       5.38 f
-  u_mult_3/U2123/YC (FAX1)                                0.08       5.46 f
-  u_mult_3/U2122/YC (FAX1)                                0.08       5.54 f
-  u_mult_3/U2121/YC (FAX1)                                0.08       5.62 f
-  u_mult_3/U2120/YC (FAX1)                                0.08       5.70 f
-  u_mult_3/U2119/YC (FAX1)                                0.08       5.78 f
-  u_mult_3/U2118/YC (FAX1)                                0.08       5.87 f
-  u_mult_3/U2117/YC (FAX1)                                0.08       5.95 f
-  u_mult_3/U2116/YC (FAX1)                                0.08       6.03 f
-  u_mult_3/U2115/YC (FAX1)                                0.08       6.11 f
-  u_mult_3/U2114/YC (FAX1)                                0.08       6.19 f
-  u_mult_3/U2113/YC (FAX1)                                0.08       6.27 f
-  u_mult_3/U2112/YC (FAX1)                                0.08       6.36 f
-  u_mult_3/U2111/YC (FAX1)                                0.08       6.44 f
-  u_mult_3/U2110/YC (FAX1)                                0.08       6.52 f
-  u_mult_3/U2109/YC (FAX1)                                0.08       6.60 f
-  u_mult_3/U2108/YC (FAX1)                                0.08       6.68 f
-  u_mult_3/U2107/YC (FAX1)                                0.08       6.76 f
-  u_mult_3/U2106/YC (FAX1)                                0.08       6.84 f
-  u_mult_3/U2105/YC (FAX1)                                0.08       6.93 f
-  u_mult_3/U2104/YC (FAX1)                                0.08       7.01 f
-  u_mult_3/U2103/YC (FAX1)                                0.08       7.09 f
-  u_mult_3/U2102/YC (FAX1)                                0.08       7.17 f
-  u_mult_3/U2101/YC (FAX1)                                0.08       7.25 f
-  u_mult_3/U2100/YC (FAX1)                                0.08       7.33 f
-  u_mult_3/U2099/YC (FAX1)                                0.08       7.41 f
-  u_mult_3/U2098/YC (FAX1)                                0.08       7.50 f
-  u_mult_3/U2097/YC (FAX1)                                0.08       7.58 f
-  u_mult_3/U2096/YC (FAX1)                                0.08       7.66 f
-  u_mult_3/U2095/YC (FAX1)                                0.08       7.74 f
-  u_mult_3/U2094/YC (FAX1)                                0.08       7.82 f
-  u_mult_3/U2093/YC (FAX1)                                0.08       7.90 f
-  u_mult_3/U2092/YC (FAX1)                                0.08       7.98 f
-  u_mult_3/U2091/YC (FAX1)                                0.08       8.07 f
-  u_mult_3/U2090/YC (FAX1)                                0.08       8.15 f
-  u_mult_3/U2089/YC (FAX1)                                0.08       8.23 f
-  u_mult_3/U2088/YC (FAX1)                                0.08       8.31 f
-  u_mult_3/U2087/YC (FAX1)                                0.08       8.39 f
-  u_mult_3/U2086/YC (FAX1)                                0.08       8.47 f
-  u_mult_3/U2085/YC (FAX1)                                0.08       8.55 f
-  u_mult_3/U2084/YC (FAX1)                                0.08       8.64 f
-  u_mult_3/U2149/YC (FAX1)                                0.08       8.72 f
-  u_mult_3/U2150/YS (FAX1)                                0.08       8.79 f
-  u_mult_3/U1_1_64/D (DFFPOSX1)                           0.00       8.79 f
-  data arrival time                                                  8.79
+  u_mult_2/mult_x_1/clk_r_REG130_S1/CLK (DFFPOSX1)        0.00 #     0.00 r
+  u_mult_2/mult_x_1/clk_r_REG130_S1/Q (DFFPOSX1)          0.06       0.06 r
+  u_mult_2/U170/Y (INVX1)                                 0.04       0.10 f
+  u_mult_2/U41/Y (INVX2)                                  0.10       0.20 r
+  u_mult_2/U173/Y (INVX8)                                 0.03       0.23 f
+  u_mult_2/U448/Y (OAI21X1)                               0.05       0.28 r
+  u_mult_2/U327/Y (AND2X2)                                0.03       0.31 r
+  u_mult_2/U328/Y (INVX1)                                 0.03       0.33 f
+  u_mult_2/U589/YC (FAX1)                                 0.08       0.42 f
+  u_mult_2/U449/Y (NAND2X1)                               0.03       0.45 r
+  u_mult_2/U74/Y (INVX1)                                  0.02       0.47 f
+  u_mult_2/U76/Y (NOR2X1)                                 0.03       0.50 r
+  u_mult_2/U77/Y (INVX1)                                  0.02       0.52 f
+  u_mult_2/U53/Y (OR2X2)                                  0.05       0.57 f
+  u_mult_2/U451/Y (NAND2X1)                               0.01       0.59 r
+  u_mult_2/U453/Y (NAND3X1)                               0.03       0.61 f
+  u_mult_2/U454/Y (OAI21X1)                               0.02       0.64 r
+  u_mult_2/U326/Y (AND2X2)                                0.03       0.67 r
+  u_mult_2/U49/Y (INVX1)                                  0.03       0.69 f
+  u_mult_2/U742/YC (FAX1)                                 0.08       0.77 f
+  u_mult_2/U737/YC (FAX1)                                 0.08       0.86 f
+  u_mult_2/U602/YC (FAX1)                                 0.08       0.94 f
+  u_mult_2/U721/YC (FAX1)                                 0.08       1.02 f
+  u_mult_2/U697/YC (FAX1)                                 0.08       1.10 f
+  u_mult_2/U455/Y (NAND2X1)                               0.02       1.12 r
+  u_mult_2/U336/Y (AND2X2)                                0.03       1.15 r
+  u_mult_2/U50/Y (INVX2)                                  0.03       1.18 f
+  u_mult_2/U471/Y (NAND2X1)                               0.01       1.19 r
+  u_mult_2/U273/Y (NAND2X1)                               0.02       1.21 f
+  u_mult_2/U274/Y (INVX1)                                 0.00       1.21 r
+  u_mult_2/U72/Y (AND2X2)                                 0.03       1.24 r
+  u_mult_2/U51/Y (INVX2)                                  0.03       1.27 f
+  u_mult_2/U473/Y (NAND2X1)                               0.01       1.28 r
+  u_mult_2/U475/Y (NAND3X1)                               0.03       1.31 f
+  u_mult_2/U481/YC (FAX1)                                 0.08       1.39 f
+  u_mult_2/U535/YC (FAX1)                                 0.08       1.48 f
+  u_mult_2/U487/YC (FAX1)                                 0.08       1.56 f
+  u_mult_2/U494/YC (FAX1)                                 0.08       1.64 f
+  u_mult_2/U540/YC (FAX1)                                 0.08       1.72 f
+  u_mult_2/U508/YC (FAX1)                                 0.09       1.80 f
+  u_mult_2/U519/Y (NAND2X1)                               0.02       1.82 r
+  u_mult_2/U66/Y (INVX1)                                  0.02       1.84 f
+  u_mult_2/U70/Y (NOR2X1)                                 0.03       1.87 r
+  u_mult_2/U71/Y (INVX1)                                  0.02       1.89 f
+  u_mult_2/U69/Y (NOR2X1)                                 0.03       1.92 r
+  u_mult_2/U65/Y (INVX1)                                  0.03       1.95 f
+  u_mult_2/U520/Y (NAND2X1)                               0.02       1.97 r
+  u_mult_2/U522/Y (NAND3X1)                               0.03       2.00 f
+  u_mult_2/U623/YC (FAX1)                                 0.08       2.08 f
+  u_mult_2/U632/YC (FAX1)                                 0.08       2.16 f
+  u_mult_2/U682/YC (FAX1)                                 0.08       2.24 f
+  u_mult_2/U644/YC (FAX1)                                 0.08       2.32 f
+  u_mult_2/U654/YC (FAX1)                                 0.08       2.41 f
+  u_mult_2/U763/YC (FAX1)                                 0.08       2.49 f
+  u_mult_2/U768/YC (FAX1)                                 0.09       2.57 f
+  u_mult_2/U777/Y (NAND2X1)                               0.02       2.59 r
+  u_mult_2/U59/Y (INVX1)                                  0.02       2.61 f
+  u_mult_2/U63/Y (NOR2X1)                                 0.03       2.64 r
+  u_mult_2/U64/Y (INVX1)                                  0.02       2.66 f
+  u_mult_2/U62/Y (NOR2X1)                                 0.03       2.68 r
+  u_mult_2/U58/Y (INVX1)                                  0.03       2.72 f
+  u_mult_2/U799/Y (XNOR2X1)                               0.05       2.76 r
+  u_mult_2/U252/Y (INVX4)                                 0.03       2.80 f
+  u_mult_2/U2081/Y (AOI21X1)                              0.05       2.84 r
+  u_mult_2/U2082/Y (MUX2X1)                               0.07       2.91 r
+  u_mult_2/U2596/YC (FAX1)                                0.08       2.99 r
+  u_mult_2/U2595/YC (FAX1)                                0.06       3.05 r
+  u_mult_2/U2269/Y (OAI21X1)                              0.02       3.07 f
+  u_mult_2/U2270/Y (NAND2X1)                              0.01       3.08 r
+  u_mult_2/U2271/Y (NAND2X1)                              0.02       3.10 f
+  u_mult_2/U2272/Y (NAND2X1)                              0.03       3.13 r
+  u_mult_2/U2274/Y (NAND2X1)                              0.03       3.16 f
+  u_mult_2/U2275/Y (NAND3X1)                              0.04       3.20 r
+  u_mult_2/U2277/Y (NAND2X1)                              0.03       3.23 f
+  u_mult_2/U2278/Y (NAND3X1)                              0.04       3.27 r
+  u_mult_2/U2279/Y (NAND2X1)                              0.02       3.29 f
+  u_mult_2/U2282/Y (NAND2X1)                              0.04       3.33 r
+  u_mult_2/U2283/Y (NAND2X1)                              0.02       3.36 f
+  u_mult_2/U2284/Y (INVX1)                                0.01       3.36 r
+  u_mult_2/U2287/Y (NOR3X1)                               0.02       3.38 f
+  u_mult_2/U2288/Y (INVX1)                                0.02       3.40 r
+  u_mult_2/U2289/Y (OAI21X1)                              0.01       3.41 f
+  u_mult_2/U331/Y (AND2X2)                                0.04       3.45 f
+  u_mult_2/U266/Y (INVX1)                                 0.01       3.46 r
+  u_mult_2/U2290/Y (NAND2X1)                              0.01       3.48 f
+  u_mult_2/U2291/Y (NAND2X1)                              0.03       3.51 r
+  u_mult_2/U2292/Y (OAI21X1)                              0.03       3.53 f
+  u_mult_2/U2293/Y (NAND2X1)                              0.03       3.56 r
+  u_mult_2/U2294/Y (NAND2X1)                              0.03       3.59 f
+  u_mult_2/U2295/Y (NAND2X1)                              0.03       3.62 r
+  u_mult_2/U2296/Y (OAI21X1)                              0.03       3.64 f
+  u_mult_2/U2297/Y (NAND2X1)                              0.03       3.67 r
+  u_mult_2/U2298/Y (OAI21X1)                              0.03       3.69 f
+  u_mult_2/U2299/Y (OAI21X1)                              0.03       3.73 r
+  u_mult_2/U2300/Y (NAND2X1)                              0.02       3.75 f
+  u_mult_2/U151/Y (NAND2X1)                               0.03       3.78 r
+  u_mult_2/U2301/Y (NAND2X1)                              0.03       3.81 f
+  u_mult_2/U2302/Y (NAND2X1)                              0.03       3.83 r
+  u_mult_2/U2303/Y (NAND2X1)                              0.02       3.86 f
+  u_mult_2/U2305/Y (NAND3X1)                              0.05       3.90 r
+  u_mult_2/U2306/Y (NAND2X1)                              0.03       3.93 f
+  u_mult_2/U2308/Y (NAND3X1)                              0.05       3.98 r
+  u_mult_2/U2512/Y (NAND2X1)                              0.03       4.00 f
+  u_mult_2/U2513/Y (NAND2X1)                              0.03       4.03 r
+  u_mult_2/U2514/Y (NAND2X1)                              0.03       4.06 f
+  u_mult_2/U2515/Y (NAND2X1)                              0.03       4.09 r
+  u_mult_2/U2516/Y (NAND2X1)                              0.03       4.11 f
+  u_mult_2/U2517/Y (NAND2X1)                              0.03       4.14 r
+  u_mult_2/U2518/Y (NAND2X1)                              0.03       4.17 f
+  u_mult_2/U2519/Y (NAND2X1)                              0.03       4.20 r
+  u_mult_2/U2520/Y (NAND2X1)                              0.03       4.22 f
+  u_mult_2/U2521/Y (NAND2X1)                              0.02       4.24 r
+  u_mult_2/U2522/Y (NAND2X1)                              0.02       4.26 f
+  u_mult_2/U2523/Y (NAND2X1)                              0.03       4.29 r
+  u_mult_2/U2524/Y (NAND2X1)                              0.02       4.31 f
+  u_mult_2/U2526/Y (NAND3X1)                              0.05       4.36 r
+  u_mult_2/U378/Y (AND2X2)                                0.04       4.40 r
+  u_mult_2/U2529/Y (NOR3X1)                               0.02       4.41 f
+  u_mult_2/U2530/Y (INVX1)                                0.02       4.44 r
+  u_mult_2/U2531/Y (NAND2X1)                              0.01       4.45 f
+  u_mult_2/U2532/Y (NAND2X1)                              0.02       4.47 r
+  u_mult_2/U2533/Y (NAND2X1)                              0.02       4.49 f
+  u_mult_2/U2534/Y (NAND2X1)                              0.02       4.51 r
+  u_mult_2/U2548/Y (NAND2X1)                              0.02       4.53 f
+  u_mult_2/U2549/Y (NAND2X1)                              0.03       4.57 r
+  u_mult_2/U2558/Y (XOR2X1)                               0.03       4.60 f
+  u_mult_2/clk_r_REG4_S2/D (DFFPOSX1)                     0.00       4.60 f
+  data arrival time                                                  4.60
 
-  clock clk (rise edge)                                  40.00      40.00
-  clock network delay (ideal)                             0.00      40.00
-  clock uncertainty                                      -0.25      39.75
-  u_mult_3/U1_1_64/CLK (DFFPOSX1)                         0.00      39.75 r
-  library setup time                                     -0.06      39.69
-  data required time                                                39.69
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.25       6.75
+  u_mult_2/clk_r_REG4_S2/CLK (DFFPOSX1)                   0.00       6.75 r
+  library setup time                                     -0.06       6.69
+  data required time                                                 6.69
   --------------------------------------------------------------------------
-  data required time                                                39.69
-  data arrival time                                                 -8.79
+  data required time                                                 6.69
+  data arrival time                                                 -4.60
   --------------------------------------------------------------------------
-  slack (MET)                                                       30.90
+  slack (MET)                                                        2.09
 
 
-  Startpoint: DL00_d2_reg[1]
+  Startpoint: u_mult_1/mult_x_1/clk_r_REG130_S1
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: rdi_reg[66]
+  Endpoint: u_mult_1/mult_x_1/clk_r_REG34_S2
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  DL00_d2_reg[1]/CLK (DFFSR)               0.00 #     0.00 r
-  DL00_d2_reg[1]/Q (DFFSR)                 0.11       0.11 r
-  U1625/Y (BUFX2)                          0.05       0.15 r
-  intadd_131/U4/YS (FAX1)                  0.11       0.26 r
-  intadd_58/U5/YS (FAX1)                   0.08       0.34 r
-  U1142/Y (INVX1)                          0.03       0.38 f
-  intadd_191/U3/YC (FAX1)                  0.09       0.47 f
-  intadd_191/U2/YS (FAX1)                  0.08       0.55 f
-  U4159/Y (NAND2X1)                        0.03       0.59 r
-  U4162/Y (AOI21X1)                        0.03       0.62 f
-  U4163/Y (NAND2X1)                        0.04       0.65 r
-  U4166/Y (AOI21X1)                        0.03       0.68 f
-  U4167/Y (NAND2X1)                        0.02       0.70 r
-  U4168/Y (INVX1)                          0.02       0.73 f
-  U4169/Y (OAI21X1)                        0.05       0.78 r
-  U1007/Y (OR2X1)                          0.06       0.83 r
-  U4170/Y (INVX1)                          0.02       0.85 f
-  U4171/Y (OAI21X1)                        0.05       0.90 r
-  U987/Y (OR2X1)                           0.06       0.96 r
-  U4172/Y (INVX1)                          0.02       0.98 f
-  U4174/Y (OAI21X1)                        0.05       1.03 r
-  U901/Y (OR2X1)                           0.06       1.09 r
-  U4175/Y (INVX1)                          0.02       1.11 f
-  U4176/Y (OAI21X1)                        0.05       1.16 r
-  U899/Y (OR2X1)                           0.06       1.21 r
-  U4177/Y (INVX1)                          0.02       1.23 f
-  U4179/Y (OAI21X1)                        0.05       1.28 r
-  U896/Y (OR2X1)                           0.06       1.34 r
-  U4180/Y (INVX1)                          0.02       1.36 f
-  U4181/Y (OAI21X1)                        0.05       1.41 r
-  U894/Y (OR2X1)                           0.06       1.47 r
-  U4182/Y (INVX1)                          0.02       1.49 f
-  U4184/Y (OAI21X1)                        0.05       1.54 r
-  U892/Y (OR2X1)                           0.06       1.59 r
-  U4185/Y (INVX1)                          0.02       1.61 f
-  U4186/Y (OAI21X1)                        0.05       1.66 r
-  U889/Y (OR2X1)                           0.06       1.72 r
-  U4187/Y (INVX1)                          0.02       1.74 f
-  U4189/Y (OAI21X1)                        0.05       1.79 r
-  U887/Y (OR2X1)                           0.06       1.85 r
-  U4190/Y (INVX1)                          0.02       1.87 f
-  U4191/Y (OAI21X1)                        0.05       1.92 r
-  U884/Y (OR2X1)                           0.06       1.97 r
-  U4192/Y (INVX1)                          0.02       1.99 f
-  U4194/Y (OAI21X1)                        0.05       2.04 r
-  U881/Y (OR2X1)                           0.06       2.10 r
-  U4195/Y (INVX1)                          0.02       2.12 f
-  U4196/Y (OAI21X1)                        0.05       2.17 r
-  U879/Y (OR2X1)                           0.06       2.23 r
-  U4197/Y (INVX1)                          0.02       2.25 f
-  U4199/Y (OAI21X1)                        0.05       2.30 r
-  U876/Y (OR2X1)                           0.06       2.35 r
-  U4200/Y (INVX1)                          0.02       2.37 f
-  U4202/Y (OAI21X1)                        0.05       2.42 r
-  U874/Y (OR2X1)                           0.06       2.48 r
-  U4203/Y (INVX1)                          0.02       2.50 f
-  U4205/Y (OAI21X1)                        0.05       2.55 r
-  U871/Y (OR2X1)                           0.06       2.61 r
-  U4206/Y (INVX1)                          0.02       2.63 f
-  U4208/Y (OAI21X1)                        0.05       2.68 r
-  U869/Y (OR2X1)                           0.06       2.73 r
-  U4209/Y (INVX1)                          0.02       2.75 f
-  U4211/Y (OAI21X1)                        0.05       2.80 r
-  U866/Y (OR2X1)                           0.06       2.86 r
-  U4212/Y (INVX1)                          0.02       2.88 f
-  U4214/Y (OAI21X1)                        0.05       2.93 r
-  U864/Y (OR2X1)                           0.06       2.99 r
-  U4215/Y (INVX1)                          0.02       3.01 f
-  U4217/Y (OAI21X1)                        0.05       3.06 r
-  U862/Y (OR2X1)                           0.06       3.11 r
-  U4218/Y (INVX1)                          0.02       3.14 f
-  U4220/Y (OAI21X1)                        0.05       3.18 r
-  U859/Y (OR2X1)                           0.06       3.24 r
-  U4221/Y (INVX1)                          0.02       3.26 f
-  U4223/Y (OAI21X1)                        0.05       3.31 r
-  U856/Y (OR2X1)                           0.06       3.37 r
-  U4224/Y (INVX1)                          0.02       3.39 f
-  U4226/Y (OAI21X1)                        0.05       3.44 r
-  U854/Y (OR2X1)                           0.06       3.49 r
-  U4227/Y (INVX1)                          0.02       3.51 f
-  U4229/Y (OAI21X1)                        0.05       3.57 r
-  U851/Y (OR2X1)                           0.06       3.62 r
-  U4230/Y (INVX1)                          0.02       3.64 f
-  U4232/Y (OAI21X1)                        0.05       3.69 r
-  U849/Y (OR2X1)                           0.06       3.75 r
-  U4233/Y (INVX1)                          0.02       3.77 f
-  U4235/Y (OAI21X1)                        0.05       3.82 r
-  U847/Y (OR2X1)                           0.06       3.87 r
-  U4236/Y (INVX1)                          0.02       3.90 f
-  U4238/Y (OAI21X1)                        0.05       3.95 r
-  U844/Y (OR2X1)                           0.06       4.00 r
-  U4239/Y (INVX1)                          0.02       4.02 f
-  U4241/Y (OAI21X1)                        0.05       4.07 r
-  U842/Y (OR2X1)                           0.06       4.13 r
-  U4242/Y (INVX1)                          0.02       4.15 f
-  U4244/Y (OAI21X1)                        0.05       4.20 r
-  U839/Y (OR2X1)                           0.06       4.25 r
-  U4245/Y (INVX1)                          0.02       4.28 f
-  U4247/Y (OAI21X1)                        0.05       4.33 r
-  U837/Y (OR2X1)                           0.06       4.38 r
-  U4248/Y (INVX1)                          0.02       4.40 f
-  U4250/Y (OAI21X1)                        0.05       4.45 r
-  U834/Y (OR2X1)                           0.06       4.51 r
-  U4251/Y (INVX1)                          0.02       4.53 f
-  U4253/Y (OAI21X1)                        0.05       4.58 r
-  U832/Y (OR2X1)                           0.06       4.63 r
-  U4254/Y (INVX1)                          0.02       4.66 f
-  U4256/Y (OAI21X1)                        0.05       4.71 r
-  U829/Y (OR2X1)                           0.06       4.76 r
-  U4257/Y (INVX1)                          0.02       4.78 f
-  U4259/Y (OAI21X1)                        0.05       4.83 r
-  U827/Y (OR2X1)                           0.06       4.89 r
-  U4260/Y (INVX1)                          0.02       4.91 f
-  U4262/Y (OAI21X1)                        0.05       4.96 r
-  U824/Y (OR2X1)                           0.06       5.01 r
-  U4263/Y (INVX1)                          0.02       5.04 f
-  U4265/Y (OAI21X1)                        0.05       5.09 r
-  U822/Y (OR2X1)                           0.06       5.14 r
-  U4266/Y (INVX1)                          0.02       5.16 f
-  U4268/Y (OAI21X1)                        0.05       5.21 r
-  U819/Y (OR2X1)                           0.06       5.27 r
-  U4269/Y (INVX1)                          0.02       5.29 f
-  U4271/Y (OAI21X1)                        0.05       5.34 r
-  U816/Y (OR2X1)                           0.06       5.40 r
-  U4272/Y (INVX1)                          0.02       5.42 f
-  U4274/Y (OAI21X1)                        0.05       5.47 r
-  U814/Y (OR2X1)                           0.06       5.52 r
-  U4275/Y (INVX1)                          0.02       5.54 f
-  U4277/Y (OAI21X1)                        0.05       5.59 r
-  U812/Y (OR2X1)                           0.06       5.65 r
-  U4278/Y (INVX1)                          0.02       5.67 f
-  U4280/Y (OAI21X1)                        0.05       5.72 r
-  U809/Y (OR2X1)                           0.06       5.78 r
-  U4281/Y (INVX1)                          0.02       5.80 f
-  U4283/Y (OAI21X1)                        0.05       5.85 r
-  U806/Y (OR2X1)                           0.06       5.90 r
-  U4284/Y (INVX1)                          0.02       5.92 f
-  U4286/Y (OAI21X1)                        0.05       5.97 r
-  U804/Y (OR2X1)                           0.06       6.03 r
-  U4287/Y (INVX1)                          0.02       6.05 f
-  U4289/Y (OAI21X1)                        0.05       6.10 r
-  U802/Y (OR2X1)                           0.06       6.16 r
-  U4290/Y (INVX1)                          0.02       6.18 f
-  U4292/Y (OAI21X1)                        0.05       6.23 r
-  U799/Y (OR2X1)                           0.06       6.28 r
-  U4293/Y (INVX1)                          0.02       6.30 f
-  U4295/Y (OAI21X1)                        0.05       6.35 r
-  U797/Y (OR2X1)                           0.06       6.41 r
-  U4296/Y (INVX1)                          0.02       6.43 f
-  U4298/Y (OAI21X1)                        0.05       6.48 r
-  U794/Y (OR2X1)                           0.06       6.54 r
-  U4299/Y (INVX1)                          0.02       6.56 f
-  U4301/Y (OAI21X1)                        0.05       6.61 r
-  U791/Y (OR2X1)                           0.06       6.66 r
-  U4302/Y (INVX1)                          0.02       6.68 f
-  U4304/Y (OAI21X1)                        0.05       6.73 r
-  U789/Y (OR2X1)                           0.06       6.79 r
-  U4305/Y (INVX1)                          0.02       6.81 f
-  U4307/Y (OAI21X1)                        0.05       6.86 r
-  U787/Y (OR2X1)                           0.06       6.92 r
-  U4308/Y (INVX1)                          0.02       6.94 f
-  U4310/Y (OAI21X1)                        0.05       6.99 r
-  U784/Y (OR2X1)                           0.06       7.04 r
-  U4311/Y (INVX1)                          0.02       7.06 f
-  U4313/Y (OAI21X1)                        0.05       7.11 r
-  U781/Y (OR2X1)                           0.06       7.17 r
-  U4314/Y (INVX1)                          0.02       7.19 f
-  U4316/Y (OAI21X1)                        0.05       7.24 r
-  U779/Y (OR2X1)                           0.06       7.30 r
-  U4317/Y (INVX1)                          0.02       7.32 f
-  U4319/Y (OAI21X1)                        0.05       7.37 r
-  U776/Y (OR2X1)                           0.06       7.42 r
-  U4320/Y (INVX1)                          0.02       7.44 f
-  U4322/Y (OAI21X1)                        0.05       7.49 r
-  U774/Y (OR2X1)                           0.06       7.55 r
-  U4323/Y (INVX1)                          0.02       7.57 f
-  U4325/Y (OAI21X1)                        0.05       7.62 r
-  U771/Y (OR2X1)                           0.06       7.68 r
-  U4326/Y (INVX1)                          0.02       7.70 f
-  U4328/Y (OAI21X1)                        0.05       7.75 r
-  U769/Y (OR2X1)                           0.06       7.80 r
-  U4329/Y (INVX1)                          0.02       7.82 f
-  U4331/Y (OAI21X1)                        0.05       7.87 r
-  U766/Y (OR2X1)                           0.06       7.93 r
-  U4332/Y (INVX1)                          0.02       7.95 f
-  U4334/Y (OAI21X1)                        0.05       8.00 r
-  U764/Y (OR2X1)                           0.06       8.06 r
-  U4335/Y (INVX1)                          0.02       8.08 f
-  U4337/Y (OAI21X1)                        0.05       8.13 r
-  U761/Y (OR2X1)                           0.06       8.18 r
-  U4338/Y (INVX1)                          0.02       8.20 f
-  U4340/Y (OAI21X1)                        0.05       8.25 r
-  U759/Y (OR2X1)                           0.06       8.31 r
-  U4341/Y (INVX1)                          0.02       8.33 f
-  U4344/Y (OAI21X1)                        0.05       8.38 r
-  U756/Y (OR2X1)                           0.06       8.44 r
-  U4345/Y (INVX1)                          0.02       8.46 f
-  U4347/Y (OAI21X1)                        0.05       8.51 r
-  U754/Y (OR2X1)                           0.06       8.56 r
-  U4360/Y (NAND2X1)                        0.02       8.58 f
-  U4361/YS (HAX1)                          0.06       8.64 f
-  U4362/Y (MUX2X1)                         0.05       8.69 r
-  U4363/Y (MUX2X1)                         0.05       8.74 r
-  rdi_reg[66]/D (DFFSR)                    0.00       8.74 r
-  data arrival time                                   8.74
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mult_1/mult_x_1/clk_r_REG130_S1/CLK (DFFPOSX1)        0.00 #     0.00 r
+  u_mult_1/mult_x_1/clk_r_REG130_S1/Q (DFFPOSX1)          0.10       0.10 f
+  u_mult_1/U30/Y (INVX2)                                  0.14       0.25 r
+  u_mult_1/U612/YC (FAX1)                                 0.09       0.33 r
+  u_mult_1/U437/Y (NAND2X1)                               0.02       0.35 f
+  u_mult_1/U438/Y (NAND2X1)                               0.03       0.39 r
+  u_mult_1/U462/YS (FAX1)                                 0.16       0.55 r
+  u_mult_1/U2020/Y (AOI21X1)                              0.06       0.60 f
+  u_mult_1/U2021/Y (MUX2X1)                               0.05       0.65 f
+  u_mult_1/U2735/YC (FAX1)                                0.09       0.74 f
+  u_mult_1/U2734/YC (FAX1)                                0.08       0.82 f
+  u_mult_1/U2733/YC (FAX1)                                0.08       0.90 f
+  u_mult_1/U2732/YC (FAX1)                                0.09       0.99 f
+  u_mult_1/U2036/Y (NAND2X1)                              0.02       1.01 r
+  u_mult_1/U2040/Y (NAND3X1)                              0.03       1.04 f
+  u_mult_1/U2731/YC (FAX1)                                0.08       1.12 f
+  u_mult_1/U2730/YC (FAX1)                                0.08       1.20 f
+  u_mult_1/U2729/YC (FAX1)                                0.08       1.28 f
+  u_mult_1/U2728/YC (FAX1)                                0.08       1.36 f
+  u_mult_1/U2041/Y (OAI21X1)                              0.02       1.38 r
+  u_mult_1/U2042/Y (NAND2X1)                              0.03       1.41 f
+  u_mult_1/U2727/YC (FAX1)                                0.09       1.50 f
+  u_mult_1/U2043/Y (NAND2X1)                              0.04       1.54 r
+  u_mult_1/U2045/Y (NAND3X1)                              0.02       1.55 f
+  u_mult_1/U358/Y (INVX1)                                 0.00       1.55 r
+  u_mult_1/U248/Y (INVX1)                                 0.03       1.58 f
+  u_mult_1/U2046/Y (NAND2X1)                              0.02       1.60 r
+  u_mult_1/U2048/Y (NAND3X1)                              0.03       1.63 f
+  u_mult_1/U2049/Y (OAI21X1)                              0.02       1.65 r
+  u_mult_1/U2050/Y (NAND2X1)                              0.03       1.68 f
+  u_mult_1/U2726/YC (FAX1)                                0.08       1.77 f
+  u_mult_1/U2725/YC (FAX1)                                0.08       1.85 f
+  u_mult_1/U2051/Y (NAND2X1)                              0.02       1.86 r
+  u_mult_1/U2052/Y (NAND2X1)                              0.03       1.89 f
+  u_mult_1/U2724/YC (FAX1)                                0.08       1.97 f
+  u_mult_1/U2053/Y (NAND2X1)                              0.02       1.99 r
+  u_mult_1/U2054/Y (NAND2X1)                              0.03       2.02 f
+  u_mult_1/U2723/YC (FAX1)                                0.08       2.10 f
+  u_mult_1/U2055/Y (OAI21X1)                              0.02       2.13 r
+  u_mult_1/U2056/Y (NAND2X1)                              0.03       2.16 f
+  u_mult_1/U2722/YC (FAX1)                                0.08       2.24 f
+  u_mult_1/U2721/YC (FAX1)                                0.09       2.32 f
+  u_mult_1/U2057/Y (NAND2X1)                              0.02       2.34 r
+  u_mult_1/U2064/Y (NAND3X1)                              0.03       2.37 f
+  u_mult_1/U2065/Y (OAI21X1)                              0.02       2.40 r
+  u_mult_1/U357/Y (AND2X2)                                0.03       2.43 r
+  u_mult_1/U95/Y (INVX1)                                  0.03       2.46 f
+  u_mult_1/U2067/Y (NAND2X1)                              0.02       2.47 r
+  u_mult_1/U45/Y (INVX1)                                  0.02       2.50 f
+  u_mult_1/U49/Y (NOR2X1)                                 0.03       2.52 r
+  u_mult_1/U50/Y (INVX1)                                  0.02       2.54 f
+  u_mult_1/U48/Y (NOR2X1)                                 0.03       2.57 r
+  u_mult_1/U44/Y (INVX1)                                  0.03       2.60 f
+  u_mult_1/U2068/Y (NAND2X1)                              0.02       2.62 r
+  u_mult_1/U2070/Y (NAND3X1)                              0.03       2.65 f
+  u_mult_1/U2720/YC (FAX1)                                0.08       2.73 f
+  u_mult_1/U2719/YC (FAX1)                                0.08       2.81 f
+  u_mult_1/U2071/Y (OAI21X1)                              0.02       2.84 r
+  u_mult_1/U2072/Y (NAND2X1)                              0.03       2.87 f
+  u_mult_1/U2073/Y (NAND2X1)                              0.02       2.88 r
+  u_mult_1/U2074/Y (INVX1)                                0.02       2.91 f
+  u_mult_1/U2075/Y (NOR2X1)                               0.03       2.93 r
+  u_mult_1/U2076/Y (INVX1)                                0.03       2.96 f
+  u_mult_1/U2718/YC (FAX1)                                0.08       3.04 f
+  u_mult_1/U2077/Y (OAI21X1)                              0.02       3.06 r
+  u_mult_1/U2078/Y (NAND2X1)                              0.02       3.09 f
+  u_mult_1/U2079/Y (OAI21X1)                              0.02       3.11 r
+  u_mult_1/U2080/Y (INVX1)                                0.02       3.13 f
+  u_mult_1/U2081/Y (NOR2X1)                               0.03       3.16 r
+  u_mult_1/U2082/Y (INVX1)                                0.03       3.19 f
+  u_mult_1/U2717/YC (FAX1)                                0.08       3.27 f
+  u_mult_1/U2083/Y (OAI21X1)                              0.02       3.29 r
+  u_mult_1/U2084/Y (NAND2X1)                              0.03       3.32 f
+  u_mult_1/U2085/Y (NAND2X1)                              0.02       3.34 r
+  u_mult_1/U2086/Y (NAND2X1)                              0.03       3.37 f
+  u_mult_1/U2588/Y (NAND2X1)                              0.02       3.39 r
+  u_mult_1/U2589/Y (NAND2X1)                              0.02       3.41 f
+  u_mult_1/U51/Y (INVX1)                                  0.01       3.41 r
+  u_mult_1/U52/Y (INVX1)                                  0.01       3.43 f
+  u_mult_1/U2590/Y (NAND2X1)                              0.03       3.45 r
+  u_mult_1/U2592/Y (NAND3X1)                              0.02       3.48 f
+  u_mult_1/U2593/Y (NAND2X1)                              0.03       3.51 r
+  u_mult_1/U2595/Y (NAND3X1)                              0.03       3.54 f
+  u_mult_1/U2596/Y (OAI21X1)                              0.02       3.56 r
+  u_mult_1/U2597/Y (NAND2X1)                              0.03       3.59 f
+  u_mult_1/U2598/Y (NAND2X1)                              0.02       3.61 r
+  u_mult_1/U2599/Y (NAND2X1)                              0.03       3.64 f
+  u_mult_1/U2716/YC (FAX1)                                0.08       3.72 f
+  u_mult_1/U2600/Y (OAI21X1)                              0.02       3.74 r
+  u_mult_1/U2601/Y (NAND2X1)                              0.03       3.77 f
+  u_mult_1/U2602/Y (OAI21X1)                              0.02       3.79 r
+  u_mult_1/U2603/Y (INVX1)                                0.02       3.82 f
+  u_mult_1/U2604/Y (NOR2X1)                               0.03       3.84 r
+  u_mult_1/U2605/Y (INVX1)                                0.03       3.87 f
+  u_mult_1/U2715/YC (FAX1)                                0.08       3.95 f
+  u_mult_1/U2606/Y (OAI21X1)                              0.02       3.98 r
+  u_mult_1/U2607/Y (NAND2X1)                              0.03       4.01 f
+  u_mult_1/U2608/Y (NAND2X1)                              0.02       4.02 r
+  u_mult_1/U2609/Y (NAND2X1)                              0.02       4.05 f
+  u_mult_1/U2610/Y (OAI21X1)                              0.02       4.07 r
+  u_mult_1/U2611/Y (NAND2X1)                              0.03       4.10 f
+  u_mult_1/U2612/Y (NAND2X1)                              0.02       4.12 r
+  u_mult_1/U2613/Y (NAND2X1)                              0.03       4.14 f
+  u_mult_1/U2617/Y (AOI21X1)                              0.04       4.18 r
+  u_mult_1/U2618/Y (NAND2X1)                              0.02       4.20 f
+  u_mult_1/U54/Y (INVX1)                                  0.01       4.21 r
+  u_mult_1/U55/Y (INVX1)                                  0.01       4.22 f
+  u_mult_1/U2619/Y (NAND2X1)                              0.03       4.25 r
+  u_mult_1/U2621/Y (NAND3X1)                              0.03       4.28 f
+  u_mult_1/U2622/Y (NAND2X1)                              0.02       4.29 r
+  u_mult_1/U2623/Y (NAND2X1)                              0.03       4.32 f
+  u_mult_1/U2624/Y (NAND2X1)                              0.02       4.34 r
+  u_mult_1/U2626/Y (NAND3X1)                              0.03       4.37 f
+  u_mult_1/U2627/Y (NAND2X1)                              0.02       4.38 r
+  u_mult_1/U2628/Y (NAND2X1)                              0.03       4.41 f
+  u_mult_1/U2629/Y (NAND2X1)                              0.02       4.43 r
+  u_mult_1/U2630/Y (NAND2X1)                              0.03       4.46 f
+  u_mult_1/U2659/Y (NAND2X1)                              0.02       4.48 r
+  u_mult_1/U2660/Y (NAND2X1)                              0.03       4.51 f
+  u_mult_1/U2680/Y (NAND2X1)                              0.02       4.53 r
+  u_mult_1/U2681/Y (NAND2X1)                              0.03       4.55 f
+  u_mult_1/U2686/Y (NAND2X1)                              0.02       4.57 r
+  u_mult_1/U2687/Y (NAND2X1)                              0.02       4.59 f
+  u_mult_1/mult_x_1/clk_r_REG34_S2/D (DFFPOSX1)           0.00       4.59 f
+  data arrival time                                                  4.59
 
-  clock clk (rise edge)                   40.00      40.00
-  clock network delay (ideal)              0.00      40.00
-  clock uncertainty                       -0.25      39.75
-  rdi_reg[66]/CLK (DFFSR)                  0.00      39.75 r
-  library setup time                      -0.08      39.67
-  data required time                                 39.67
-  -----------------------------------------------------------
-  data required time                                 39.67
-  data arrival time                                  -8.74
-  -----------------------------------------------------------
-  slack (MET)                                        30.93
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.25       6.75
+  u_mult_1/mult_x_1/clk_r_REG34_S2/CLK (DFFPOSX1)         0.00       6.75 r
+  library setup time                                     -0.06       6.69
+  data required time                                                 6.69
+  --------------------------------------------------------------------------
+  data required time                                                 6.69
+  data arrival time                                                 -4.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.10
+
+
+  Startpoint: u_mult_6/mult_x_1/clk_r_REG92_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mult_6/clk_r_REG24_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mult_6/mult_x_1/clk_r_REG92_S1/CLK (DFFPOSX1)         0.00       0.00 r
+  u_mult_6/mult_x_1/clk_r_REG92_S1/Q (DFFPOSX1)           0.20       0.20 f
+  u_mult_6/U124/Y (INVX1)                                 0.37       0.58 r
+  u_mult_6/U1100/Y (MUX2X1)                               0.14       0.72 f
+  u_mult_6/U1112/Y (OR2X1)                                0.06       0.78 f
+  u_mult_6/U87/Y (INVX1)                                  0.28       1.06 r
+  u_mult_6/U1962/Y (AOI22X1)                              0.13       1.19 f
+  u_mult_6/U1963/Y (OAI21X1)                              0.06       1.25 r
+  u_mult_6/U1964/Y (AOI21X1)                              0.02       1.27 f
+  u_mult_6/U1965/Y (MUX2X1)                               0.05       1.32 f
+  u_mult_6/U2105/YC (HAX1)                                0.08       1.40 f
+  u_mult_6/U2104/YC (FAX1)                                0.08       1.48 f
+  u_mult_6/U2095/YC (FAX1)                                0.08       1.56 f
+  u_mult_6/U2090/YC (FAX1)                                0.08       1.64 f
+  u_mult_6/U2085/YC (FAX1)                                0.08       1.73 f
+  u_mult_6/U2084/YC (FAX1)                                0.08       1.81 f
+  u_mult_6/U2075/YC (FAX1)                                0.08       1.89 f
+  u_mult_6/U2069/YC (FAX1)                                0.08       1.97 f
+  u_mult_6/U2064/YC (FAX1)                                0.08       2.05 f
+  u_mult_6/U2063/YC (FAX1)                                0.08       2.13 f
+  u_mult_6/U2054/YC (FAX1)                                0.08       2.21 f
+  u_mult_6/U2047/YC (FAX1)                                0.08       2.30 f
+  u_mult_6/U2042/YC (FAX1)                                0.08       2.38 f
+  u_mult_6/U2041/YC (FAX1)                                0.08       2.46 f
+  u_mult_6/U2032/YC (FAX1)                                0.08       2.54 f
+  u_mult_6/U2028/YC (FAX1)                                0.08       2.62 f
+  u_mult_6/U2022/YC (FAX1)                                0.08       2.70 f
+  u_mult_6/U2017/YC (FAX1)                                0.08       2.79 f
+  u_mult_6/U2011/YC (FAX1)                                0.08       2.87 f
+  u_mult_6/U2006/YC (FAX1)                                0.08       2.95 f
+  u_mult_6/U2005/YC (FAX1)                                0.08       3.03 f
+  u_mult_6/U1996/YC (FAX1)                                0.08       3.11 f
+  u_mult_6/U1995/YC (FAX1)                                0.08       3.19 f
+  u_mult_6/U1987/YC (FAX1)                                0.08       3.27 f
+  u_mult_6/U1982/YC (FAX1)                                0.08       3.36 f
+  u_mult_6/U1977/YS (FAX1)                                0.10       3.46 r
+  u_mult_6/U2162/YS (FAX1)                                0.11       3.57 r
+  u_mult_6/U2163/Y (NAND2X1)                              0.02       3.59 f
+  u_mult_6/U2353/Y (NAND2X1)                              0.03       3.62 r
+  u_mult_6/U2354/Y (OAI21X1)                              0.02       3.64 f
+  u_mult_6/U2355/Y (NAND2X1)                              0.03       3.67 r
+  u_mult_6/U2356/Y (NAND2X1)                              0.03       3.70 f
+  u_mult_6/U2357/Y (NAND2X1)                              0.03       3.73 r
+  u_mult_6/U2358/Y (OAI21X1)                              0.03       3.75 f
+  u_mult_6/U2359/Y (NAND2X1)                              0.03       3.78 r
+  u_mult_6/U2814/Y (NAND2X1)                              0.03       3.80 f
+  u_mult_6/U2815/Y (NAND2X1)                              0.03       3.83 r
+  u_mult_6/U2816/Y (OAI21X1)                              0.03       3.86 f
+  u_mult_6/U2817/Y (NAND2X1)                              0.03       3.89 r
+  u_mult_6/U2818/Y (OAI21X1)                              0.03       3.91 f
+  u_mult_6/U2819/Y (NAND2X1)                              0.03       3.94 r
+  u_mult_6/U2820/Y (NAND2X1)                              0.03       3.97 f
+  u_mult_6/U2821/Y (NAND2X1)                              0.03       4.00 r
+  u_mult_6/U2822/Y (OAI21X1)                              0.03       4.02 f
+  u_mult_6/U2823/Y (NAND2X1)                              0.03       4.05 r
+  u_mult_6/U2824/Y (NAND2X1)                              0.03       4.08 f
+  u_mult_6/U2825/Y (NAND2X1)                              0.03       4.11 r
+  u_mult_6/U2826/Y (OAI21X1)                              0.03       4.13 f
+  u_mult_6/U2827/Y (OAI21X1)                              0.04       4.17 r
+  u_mult_6/U2939/YC (FAX1)                                0.07       4.24 r
+  u_mult_6/U2828/Y (OAI21X1)                              0.02       4.26 f
+  u_mult_6/U2829/Y (NAND2X1)                              0.02       4.28 r
+  u_mult_6/U2830/Y (OAI21X1)                              0.02       4.30 f
+  u_mult_6/U2831/Y (OAI21X1)                              0.04       4.33 r
+  u_mult_6/U2938/YC (FAX1)                                0.07       4.41 r
+  u_mult_6/U2832/Y (OAI21X1)                              0.02       4.43 f
+  u_mult_6/U2833/Y (NAND2X1)                              0.02       4.44 r
+  u_mult_6/U2834/Y (NAND2X1)                              0.02       4.46 f
+  u_mult_6/U2835/Y (NAND2X1)                              0.03       4.50 r
+  u_mult_6/U2876/Y (NAND2X1)                              0.03       4.52 f
+  u_mult_6/U2877/Y (NAND2X1)                              0.03       4.55 r
+  u_mult_6/U2895/Y (XNOR2X1)                              0.03       4.58 f
+  u_mult_6/clk_r_REG24_S2/D (DFFPOSX1)                    0.00       4.58 f
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.25       6.75
+  u_mult_6/clk_r_REG24_S2/CLK (DFFPOSX1)                  0.00       6.75 r
+  library setup time                                     -0.06       6.69
+  data required time                                                 6.69
+  --------------------------------------------------------------------------
+  data required time                                                 6.69
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.11
+
+
+  Startpoint: u_mult_1/mult_x_1/clk_r_REG130_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mult_1/clk_r_REG35_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mult_1/mult_x_1/clk_r_REG130_S1/CLK (DFFPOSX1)        0.00 #     0.00 r
+  u_mult_1/mult_x_1/clk_r_REG130_S1/Q (DFFPOSX1)          0.10       0.10 f
+  u_mult_1/U30/Y (INVX2)                                  0.14       0.25 r
+  u_mult_1/U612/YC (FAX1)                                 0.09       0.33 r
+  u_mult_1/U437/Y (NAND2X1)                               0.02       0.35 f
+  u_mult_1/U438/Y (NAND2X1)                               0.03       0.39 r
+  u_mult_1/U462/YS (FAX1)                                 0.16       0.55 r
+  u_mult_1/U2020/Y (AOI21X1)                              0.06       0.60 f
+  u_mult_1/U2021/Y (MUX2X1)                               0.05       0.65 f
+  u_mult_1/U2735/YC (FAX1)                                0.09       0.74 f
+  u_mult_1/U2734/YC (FAX1)                                0.08       0.82 f
+  u_mult_1/U2733/YC (FAX1)                                0.08       0.90 f
+  u_mult_1/U2732/YC (FAX1)                                0.09       0.99 f
+  u_mult_1/U2036/Y (NAND2X1)                              0.02       1.01 r
+  u_mult_1/U2040/Y (NAND3X1)                              0.03       1.04 f
+  u_mult_1/U2731/YC (FAX1)                                0.08       1.12 f
+  u_mult_1/U2730/YC (FAX1)                                0.08       1.20 f
+  u_mult_1/U2729/YC (FAX1)                                0.08       1.28 f
+  u_mult_1/U2728/YC (FAX1)                                0.08       1.36 f
+  u_mult_1/U2041/Y (OAI21X1)                              0.02       1.38 r
+  u_mult_1/U2042/Y (NAND2X1)                              0.03       1.41 f
+  u_mult_1/U2727/YC (FAX1)                                0.09       1.50 f
+  u_mult_1/U2043/Y (NAND2X1)                              0.04       1.54 r
+  u_mult_1/U2045/Y (NAND3X1)                              0.02       1.55 f
+  u_mult_1/U358/Y (INVX1)                                 0.00       1.55 r
+  u_mult_1/U248/Y (INVX1)                                 0.03       1.58 f
+  u_mult_1/U2046/Y (NAND2X1)                              0.02       1.60 r
+  u_mult_1/U2048/Y (NAND3X1)                              0.03       1.63 f
+  u_mult_1/U2049/Y (OAI21X1)                              0.02       1.65 r
+  u_mult_1/U2050/Y (NAND2X1)                              0.03       1.68 f
+  u_mult_1/U2726/YC (FAX1)                                0.08       1.77 f
+  u_mult_1/U2725/YC (FAX1)                                0.08       1.85 f
+  u_mult_1/U2051/Y (NAND2X1)                              0.02       1.86 r
+  u_mult_1/U2052/Y (NAND2X1)                              0.03       1.89 f
+  u_mult_1/U2724/YC (FAX1)                                0.08       1.97 f
+  u_mult_1/U2053/Y (NAND2X1)                              0.02       1.99 r
+  u_mult_1/U2054/Y (NAND2X1)                              0.03       2.02 f
+  u_mult_1/U2723/YC (FAX1)                                0.08       2.10 f
+  u_mult_1/U2055/Y (OAI21X1)                              0.02       2.13 r
+  u_mult_1/U2056/Y (NAND2X1)                              0.03       2.16 f
+  u_mult_1/U2722/YC (FAX1)                                0.08       2.24 f
+  u_mult_1/U2721/YC (FAX1)                                0.09       2.32 f
+  u_mult_1/U2057/Y (NAND2X1)                              0.02       2.34 r
+  u_mult_1/U2064/Y (NAND3X1)                              0.03       2.37 f
+  u_mult_1/U2065/Y (OAI21X1)                              0.02       2.40 r
+  u_mult_1/U357/Y (AND2X2)                                0.03       2.43 r
+  u_mult_1/U95/Y (INVX1)                                  0.03       2.46 f
+  u_mult_1/U2067/Y (NAND2X1)                              0.02       2.47 r
+  u_mult_1/U45/Y (INVX1)                                  0.02       2.50 f
+  u_mult_1/U49/Y (NOR2X1)                                 0.03       2.52 r
+  u_mult_1/U50/Y (INVX1)                                  0.02       2.54 f
+  u_mult_1/U48/Y (NOR2X1)                                 0.03       2.57 r
+  u_mult_1/U44/Y (INVX1)                                  0.03       2.60 f
+  u_mult_1/U2068/Y (NAND2X1)                              0.02       2.62 r
+  u_mult_1/U2070/Y (NAND3X1)                              0.03       2.65 f
+  u_mult_1/U2720/YC (FAX1)                                0.08       2.73 f
+  u_mult_1/U2719/YC (FAX1)                                0.08       2.81 f
+  u_mult_1/U2071/Y (OAI21X1)                              0.02       2.84 r
+  u_mult_1/U2072/Y (NAND2X1)                              0.03       2.87 f
+  u_mult_1/U2073/Y (NAND2X1)                              0.02       2.88 r
+  u_mult_1/U2074/Y (INVX1)                                0.02       2.91 f
+  u_mult_1/U2075/Y (NOR2X1)                               0.03       2.93 r
+  u_mult_1/U2076/Y (INVX1)                                0.03       2.96 f
+  u_mult_1/U2718/YC (FAX1)                                0.08       3.04 f
+  u_mult_1/U2077/Y (OAI21X1)                              0.02       3.06 r
+  u_mult_1/U2078/Y (NAND2X1)                              0.02       3.09 f
+  u_mult_1/U2079/Y (OAI21X1)                              0.02       3.11 r
+  u_mult_1/U2080/Y (INVX1)                                0.02       3.13 f
+  u_mult_1/U2081/Y (NOR2X1)                               0.03       3.16 r
+  u_mult_1/U2082/Y (INVX1)                                0.03       3.19 f
+  u_mult_1/U2717/YC (FAX1)                                0.08       3.27 f
+  u_mult_1/U2083/Y (OAI21X1)                              0.02       3.29 r
+  u_mult_1/U2084/Y (NAND2X1)                              0.03       3.32 f
+  u_mult_1/U2085/Y (NAND2X1)                              0.02       3.34 r
+  u_mult_1/U2086/Y (NAND2X1)                              0.03       3.37 f
+  u_mult_1/U2588/Y (NAND2X1)                              0.02       3.39 r
+  u_mult_1/U2589/Y (NAND2X1)                              0.02       3.41 f
+  u_mult_1/U51/Y (INVX1)                                  0.01       3.41 r
+  u_mult_1/U52/Y (INVX1)                                  0.01       3.43 f
+  u_mult_1/U2590/Y (NAND2X1)                              0.03       3.45 r
+  u_mult_1/U2592/Y (NAND3X1)                              0.02       3.48 f
+  u_mult_1/U2593/Y (NAND2X1)                              0.03       3.51 r
+  u_mult_1/U2595/Y (NAND3X1)                              0.03       3.54 f
+  u_mult_1/U2596/Y (OAI21X1)                              0.02       3.56 r
+  u_mult_1/U2597/Y (NAND2X1)                              0.03       3.59 f
+  u_mult_1/U2598/Y (NAND2X1)                              0.02       3.61 r
+  u_mult_1/U2599/Y (NAND2X1)                              0.03       3.64 f
+  u_mult_1/U2716/YC (FAX1)                                0.08       3.72 f
+  u_mult_1/U2600/Y (OAI21X1)                              0.02       3.74 r
+  u_mult_1/U2601/Y (NAND2X1)                              0.03       3.77 f
+  u_mult_1/U2602/Y (OAI21X1)                              0.02       3.79 r
+  u_mult_1/U2603/Y (INVX1)                                0.02       3.82 f
+  u_mult_1/U2604/Y (NOR2X1)                               0.03       3.84 r
+  u_mult_1/U2605/Y (INVX1)                                0.03       3.87 f
+  u_mult_1/U2715/YC (FAX1)                                0.08       3.95 f
+  u_mult_1/U2606/Y (OAI21X1)                              0.02       3.98 r
+  u_mult_1/U2607/Y (NAND2X1)                              0.03       4.01 f
+  u_mult_1/U2608/Y (NAND2X1)                              0.02       4.02 r
+  u_mult_1/U2609/Y (NAND2X1)                              0.02       4.05 f
+  u_mult_1/U2610/Y (OAI21X1)                              0.02       4.07 r
+  u_mult_1/U2611/Y (NAND2X1)                              0.03       4.10 f
+  u_mult_1/U2612/Y (NAND2X1)                              0.02       4.12 r
+  u_mult_1/U2613/Y (NAND2X1)                              0.03       4.14 f
+  u_mult_1/U2617/Y (AOI21X1)                              0.04       4.18 r
+  u_mult_1/U2618/Y (NAND2X1)                              0.02       4.20 f
+  u_mult_1/U54/Y (INVX1)                                  0.01       4.21 r
+  u_mult_1/U55/Y (INVX1)                                  0.01       4.22 f
+  u_mult_1/U2619/Y (NAND2X1)                              0.03       4.25 r
+  u_mult_1/U2621/Y (NAND3X1)                              0.03       4.28 f
+  u_mult_1/U2622/Y (NAND2X1)                              0.02       4.29 r
+  u_mult_1/U2623/Y (NAND2X1)                              0.03       4.32 f
+  u_mult_1/U2624/Y (NAND2X1)                              0.02       4.34 r
+  u_mult_1/U2626/Y (NAND3X1)                              0.03       4.37 f
+  u_mult_1/U2627/Y (NAND2X1)                              0.02       4.38 r
+  u_mult_1/U2628/Y (NAND2X1)                              0.03       4.41 f
+  u_mult_1/U2629/Y (NAND2X1)                              0.02       4.43 r
+  u_mult_1/U2630/Y (NAND2X1)                              0.03       4.46 f
+  u_mult_1/U2659/Y (NAND2X1)                              0.02       4.48 r
+  u_mult_1/U2660/Y (NAND2X1)                              0.03       4.51 f
+  u_mult_1/U2680/Y (NAND2X1)                              0.02       4.53 r
+  u_mult_1/U2681/Y (NAND2X1)                              0.03       4.55 f
+  u_mult_1/U2685/Y (XNOR2X1)                              0.03       4.58 f
+  u_mult_1/clk_r_REG35_S2/D (DFFPOSX1)                    0.00       4.58 f
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.25       6.75
+  u_mult_1/clk_r_REG35_S2/CLK (DFFPOSX1)                  0.00       6.75 r
+  library setup time                                     -0.06       6.69
+  data required time                                                 6.69
+  --------------------------------------------------------------------------
+  data required time                                                 6.69
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.11
+
+
+  Startpoint: u_mult_2/mult_x_1/clk_r_REG130_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mult_2/clk_r_REG2_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mult_2/mult_x_1/clk_r_REG130_S1/CLK (DFFPOSX1)        0.00 #     0.00 r
+  u_mult_2/mult_x_1/clk_r_REG130_S1/Q (DFFPOSX1)          0.06       0.06 r
+  u_mult_2/U170/Y (INVX1)                                 0.04       0.10 f
+  u_mult_2/U41/Y (INVX2)                                  0.10       0.20 r
+  u_mult_2/U173/Y (INVX8)                                 0.03       0.23 f
+  u_mult_2/U448/Y (OAI21X1)                               0.05       0.28 r
+  u_mult_2/U327/Y (AND2X2)                                0.03       0.31 r
+  u_mult_2/U328/Y (INVX1)                                 0.03       0.33 f
+  u_mult_2/U589/YC (FAX1)                                 0.08       0.42 f
+  u_mult_2/U449/Y (NAND2X1)                               0.03       0.45 r
+  u_mult_2/U74/Y (INVX1)                                  0.02       0.47 f
+  u_mult_2/U76/Y (NOR2X1)                                 0.03       0.50 r
+  u_mult_2/U77/Y (INVX1)                                  0.02       0.52 f
+  u_mult_2/U53/Y (OR2X2)                                  0.05       0.57 f
+  u_mult_2/U451/Y (NAND2X1)                               0.01       0.59 r
+  u_mult_2/U453/Y (NAND3X1)                               0.03       0.61 f
+  u_mult_2/U454/Y (OAI21X1)                               0.02       0.64 r
+  u_mult_2/U326/Y (AND2X2)                                0.03       0.67 r
+  u_mult_2/U49/Y (INVX1)                                  0.03       0.69 f
+  u_mult_2/U742/YC (FAX1)                                 0.08       0.77 f
+  u_mult_2/U737/YC (FAX1)                                 0.08       0.86 f
+  u_mult_2/U602/YC (FAX1)                                 0.08       0.94 f
+  u_mult_2/U721/YC (FAX1)                                 0.08       1.02 f
+  u_mult_2/U697/YC (FAX1)                                 0.08       1.10 f
+  u_mult_2/U455/Y (NAND2X1)                               0.02       1.12 r
+  u_mult_2/U336/Y (AND2X2)                                0.03       1.15 r
+  u_mult_2/U50/Y (INVX2)                                  0.03       1.18 f
+  u_mult_2/U471/Y (NAND2X1)                               0.01       1.19 r
+  u_mult_2/U273/Y (NAND2X1)                               0.02       1.21 f
+  u_mult_2/U274/Y (INVX1)                                 0.00       1.21 r
+  u_mult_2/U72/Y (AND2X2)                                 0.03       1.24 r
+  u_mult_2/U51/Y (INVX2)                                  0.03       1.27 f
+  u_mult_2/U473/Y (NAND2X1)                               0.01       1.28 r
+  u_mult_2/U475/Y (NAND3X1)                               0.03       1.31 f
+  u_mult_2/U481/YC (FAX1)                                 0.08       1.39 f
+  u_mult_2/U535/YC (FAX1)                                 0.08       1.48 f
+  u_mult_2/U487/YC (FAX1)                                 0.08       1.56 f
+  u_mult_2/U494/YC (FAX1)                                 0.08       1.64 f
+  u_mult_2/U540/YC (FAX1)                                 0.08       1.72 f
+  u_mult_2/U508/YC (FAX1)                                 0.09       1.80 f
+  u_mult_2/U519/Y (NAND2X1)                               0.02       1.82 r
+  u_mult_2/U66/Y (INVX1)                                  0.02       1.84 f
+  u_mult_2/U70/Y (NOR2X1)                                 0.03       1.87 r
+  u_mult_2/U71/Y (INVX1)                                  0.02       1.89 f
+  u_mult_2/U69/Y (NOR2X1)                                 0.03       1.92 r
+  u_mult_2/U65/Y (INVX1)                                  0.03       1.95 f
+  u_mult_2/U520/Y (NAND2X1)                               0.02       1.97 r
+  u_mult_2/U522/Y (NAND3X1)                               0.03       2.00 f
+  u_mult_2/U623/YC (FAX1)                                 0.08       2.08 f
+  u_mult_2/U632/YC (FAX1)                                 0.08       2.16 f
+  u_mult_2/U682/YC (FAX1)                                 0.08       2.24 f
+  u_mult_2/U644/YC (FAX1)                                 0.08       2.32 f
+  u_mult_2/U654/YC (FAX1)                                 0.08       2.41 f
+  u_mult_2/U763/YC (FAX1)                                 0.08       2.49 f
+  u_mult_2/U768/YC (FAX1)                                 0.09       2.57 f
+  u_mult_2/U777/Y (NAND2X1)                               0.02       2.59 r
+  u_mult_2/U59/Y (INVX1)                                  0.02       2.61 f
+  u_mult_2/U63/Y (NOR2X1)                                 0.03       2.64 r
+  u_mult_2/U64/Y (INVX1)                                  0.02       2.66 f
+  u_mult_2/U62/Y (NOR2X1)                                 0.03       2.68 r
+  u_mult_2/U58/Y (INVX1)                                  0.03       2.72 f
+  u_mult_2/U799/Y (XNOR2X1)                               0.05       2.76 r
+  u_mult_2/U252/Y (INVX4)                                 0.03       2.80 f
+  u_mult_2/U2081/Y (AOI21X1)                              0.05       2.84 r
+  u_mult_2/U2082/Y (MUX2X1)                               0.07       2.91 r
+  u_mult_2/U2596/YC (FAX1)                                0.08       2.99 r
+  u_mult_2/U2595/YC (FAX1)                                0.06       3.05 r
+  u_mult_2/U2269/Y (OAI21X1)                              0.02       3.07 f
+  u_mult_2/U2270/Y (NAND2X1)                              0.01       3.08 r
+  u_mult_2/U2271/Y (NAND2X1)                              0.02       3.10 f
+  u_mult_2/U2272/Y (NAND2X1)                              0.03       3.13 r
+  u_mult_2/U2274/Y (NAND2X1)                              0.03       3.16 f
+  u_mult_2/U2275/Y (NAND3X1)                              0.04       3.20 r
+  u_mult_2/U2277/Y (NAND2X1)                              0.03       3.23 f
+  u_mult_2/U2278/Y (NAND3X1)                              0.04       3.27 r
+  u_mult_2/U2279/Y (NAND2X1)                              0.02       3.29 f
+  u_mult_2/U2282/Y (NAND2X1)                              0.04       3.33 r
+  u_mult_2/U2283/Y (NAND2X1)                              0.02       3.36 f
+  u_mult_2/U2284/Y (INVX1)                                0.01       3.36 r
+  u_mult_2/U2287/Y (NOR3X1)                               0.02       3.38 f
+  u_mult_2/U2288/Y (INVX1)                                0.02       3.40 r
+  u_mult_2/U2289/Y (OAI21X1)                              0.01       3.41 f
+  u_mult_2/U331/Y (AND2X2)                                0.04       3.45 f
+  u_mult_2/U266/Y (INVX1)                                 0.01       3.46 r
+  u_mult_2/U2290/Y (NAND2X1)                              0.01       3.48 f
+  u_mult_2/U2291/Y (NAND2X1)                              0.03       3.51 r
+  u_mult_2/U2292/Y (OAI21X1)                              0.03       3.53 f
+  u_mult_2/U2293/Y (NAND2X1)                              0.03       3.56 r
+  u_mult_2/U2294/Y (NAND2X1)                              0.03       3.59 f
+  u_mult_2/U2295/Y (NAND2X1)                              0.03       3.62 r
+  u_mult_2/U2296/Y (OAI21X1)                              0.03       3.64 f
+  u_mult_2/U2297/Y (NAND2X1)                              0.03       3.67 r
+  u_mult_2/U2298/Y (OAI21X1)                              0.03       3.69 f
+  u_mult_2/U2299/Y (OAI21X1)                              0.03       3.73 r
+  u_mult_2/U2300/Y (NAND2X1)                              0.02       3.75 f
+  u_mult_2/U151/Y (NAND2X1)                               0.03       3.78 r
+  u_mult_2/U2301/Y (NAND2X1)                              0.03       3.81 f
+  u_mult_2/U2302/Y (NAND2X1)                              0.03       3.83 r
+  u_mult_2/U2303/Y (NAND2X1)                              0.02       3.86 f
+  u_mult_2/U2305/Y (NAND3X1)                              0.05       3.90 r
+  u_mult_2/U2306/Y (NAND2X1)                              0.03       3.93 f
+  u_mult_2/U2308/Y (NAND3X1)                              0.05       3.98 r
+  u_mult_2/U2512/Y (NAND2X1)                              0.03       4.00 f
+  u_mult_2/U2513/Y (NAND2X1)                              0.03       4.03 r
+  u_mult_2/U2514/Y (NAND2X1)                              0.03       4.06 f
+  u_mult_2/U2515/Y (NAND2X1)                              0.03       4.09 r
+  u_mult_2/U2516/Y (NAND2X1)                              0.03       4.11 f
+  u_mult_2/U2517/Y (NAND2X1)                              0.03       4.14 r
+  u_mult_2/U2518/Y (NAND2X1)                              0.03       4.17 f
+  u_mult_2/U2519/Y (NAND2X1)                              0.03       4.20 r
+  u_mult_2/U2520/Y (NAND2X1)                              0.03       4.22 f
+  u_mult_2/U2521/Y (NAND2X1)                              0.02       4.24 r
+  u_mult_2/U2522/Y (NAND2X1)                              0.02       4.26 f
+  u_mult_2/U2523/Y (NAND2X1)                              0.03       4.29 r
+  u_mult_2/U2524/Y (NAND2X1)                              0.02       4.31 f
+  u_mult_2/U2526/Y (NAND3X1)                              0.05       4.36 r
+  u_mult_2/U378/Y (AND2X2)                                0.04       4.40 r
+  u_mult_2/U2529/Y (NOR3X1)                               0.02       4.41 f
+  u_mult_2/U2530/Y (INVX1)                                0.02       4.44 r
+  u_mult_2/U2531/Y (NAND2X1)                              0.01       4.45 f
+  u_mult_2/U2532/Y (NAND2X1)                              0.02       4.47 r
+  u_mult_2/U2533/Y (NAND2X1)                              0.02       4.49 f
+  u_mult_2/U2534/Y (NAND2X1)                              0.02       4.51 r
+  u_mult_2/U264/Y (BUFX2)                                 0.04       4.55 r
+  u_mult_2/U2546/Y (XOR2X1)                               0.03       4.58 f
+  u_mult_2/clk_r_REG2_S2/D (DFFPOSX1)                     0.00       4.58 f
+  data arrival time                                                  4.58
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.25       6.75
+  u_mult_2/clk_r_REG2_S2/CLK (DFFPOSX1)                   0.00       6.75 r
+  library setup time                                     -0.06       6.69
+  data required time                                                 6.69
+  --------------------------------------------------------------------------
+  data required time                                                 6.69
+  data arrival time                                                 -4.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.11
 
 
 1
@@ -1727,9 +1590,9 @@ Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
 1
 quit
 
-Memory usage for this session 258 Mbytes.
-Memory usage for this session including child processes 258 Mbytes.
-CPU usage for this session 73 seconds ( 0.02 hours ).
-Elapsed time for this session 78 seconds ( 0.02 hours ).
+Memory usage for this session 257 Mbytes.
+Memory usage for this session including child processes 257 Mbytes.
+CPU usage for this session 159 seconds ( 0.04 hours ).
+Elapsed time for this session 161 seconds ( 0.04 hours ).
 
 Thank you...

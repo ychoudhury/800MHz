@@ -4,7 +4,7 @@ suppress_message { UID-401 VER-130 }
 read_sverilog DW02_mult_5_stage.v
 read_sverilog hw1_10.v
 current_design hw1_10
-create_clock clk -name clk -period 28.000
+create_clock clk -name clk -period 4.900
 set_propagated_clock clk
 set_clock_uncertainty 0.25 clk
 set_propagated_clock clk
@@ -15,9 +15,9 @@ set_input_delay 0.6 -clock clk $all_inputs_wo_rst_clk
 set_output_delay 0.6 -clock clk [all_outputs]
 set_fix_hold [ get_clocks clk ]
 set_output_delay 0.3 -clock clk [all_outputs]
-set_max_delay 28.000 -from [all_inputs] -to [all_outputs]
+set_max_delay 4.900 -from [all_inputs] -to [all_outputs]
 compile_ultra
-create_clock clk -name clk -period 40.000
+create_clock clk -name clk -period 7.000
 
 update_timing
 report_timing -max_paths 5

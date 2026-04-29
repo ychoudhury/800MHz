@@ -25,7 +25,7 @@ module hw1_10(
     
         reg signed [74:0] rd_d,rdi;
         
-	reg push1, push2, push3, pusho;
+	reg push1, push2, push3, push4, push5, push6, push7, pusho;
         
 	assign rd=rdi;
         assign pushout=pusho;
@@ -79,28 +79,74 @@ module hw1_10(
 	end
 
 
-	// XOR logic
-	wire signed [74:0] left_sum = mult_1
-				    + (mult_2 + DL07_d2)
-			    	    - (mult_3 + DL05_d2)
-				    - mult_4
-				    + mux_1_d2;
+	// Pipelined adder registers
+	// Level 1 registers
+	reg signed [74:0] add1_L_0, add1_L_1, add1_L_2, add1_L_3;
+	reg signed [74:0] add1_R_0, add1_R_1, add1_R_2, add1_R_3, add1_R_4, add1_R_5, add1_R_6;
 
-	wire signed [74:0] right_sum = CL04_d2
-       				     + (mult_2 + DL06_d2)
-			     	     + (mult_5 + DL02_d2)
-				     + mult_6
-				     - (mult_7 + DL03_d2)
-				     - (mult_8 + DL01_d2)
-				     + (mult_9 + DL04_d2)
-				     + (mult_10 + DL00_d2);
-	
-				     
-        always @(*) begin
-		rd_d = left_sum ^ right_sum;
+	// Level 2 registers
+	reg signed [74:0] add2_L_0, add2_L_1;
+	reg signed [74:0] add2_R_0, add2_R_1, add2_R_2, add2_R_3;
+
+	// Level 3 registers
+	reg signed [74:0] add3_L_0;
+	reg signed [74:0] add3_R_0, add3_R_1;
+
+	// Level 4 registers
+	reg signed [74:0] add4_L_final;
+	reg signed [74:0] add4_R_final;
+
+
+	always @(posedge clk or posedge reset) begin
+		if (reset) begin
+			add1_L_0 <= 0; add1_L_1 <= 0; add1_L_2 <= 0; add1_L_3 <= 0;
+			add1_R_0 <= 0; add1_R_1 <= 0; add1_R_2 <= 0; add1_R_3 <= 0; add1_R_4 <= 0; add1_R_5 <= 0; add1_R_6 <= 0;
+			add2_L_0 <= 0; add2_L_1 <= 0;
+			add2_R_0 <= 0; add2_R_1 <= 0; add2_R_2 <= 0; add2_R_3 <= 0;
+			add3_L_0 <= 0;
+			add3_R_0 <= 0; add3_R_1 <= 0;
+			add4_L_final <= 0;
+			add4_R_final <= 0;
+		end else begin
+			// --- LEVEL 1: Pair up the multiplier outputs and bypass signals ---
+			add1_L_0 <= mult_1 + mult_2;
+			add1_L_1 <= DL07_d2 - mult_3;
+			add1_L_2 <= mux_1_d2 - mult_4;
+			add1_L_3 <= -DL05_d2;
+
+			add1_R_0 <= CL04_d2 + mult_2;
+			add1_R_1 <= DL06_d2 + mult_5;
+			add1_R_2 <= DL02_d2 + mult_6;
+			add1_R_3 <= mult_7 + DL03_d2;   // Evaluated here, subtracted in L2
+			add1_R_4 <= mult_8 + DL01_d2;   // Evaluated here, subtracted in L2
+			add1_R_5 <= mult_9 + DL04_d2;
+			add1_R_6 <= mult_10 + DL00_d2;
+
+			// --- LEVEL 2: Combine Level 1 results ---
+			add2_L_0 <= add1_L_0 + add1_L_1;
+			add2_L_1 <= add1_L_2 + add1_L_3;
+
+			add2_R_0 <= add1_R_0 + add1_R_1;
+			add2_R_1 <= add1_R_2 - add1_R_3; // Subtracting group 3
+			add2_R_2 <= add1_R_5 - add1_R_4; // Subtracting group 4
+			add2_R_3 <= add1_R_6;
+
+			// --- LEVEL 3: Combine Level 2 results ---
+			add3_L_0 <= add2_L_0 + add2_L_1;
+
+			add3_R_0 <= add2_R_0 + add2_R_1;
+			add3_R_1 <= add2_R_2 + add2_R_3;
+
+			// --- LEVEL 4: Final accumulation ---
+			add4_L_final <= add3_L_0;        // Left side is done, pass it through
+			add4_R_final <= add3_R_0 + add3_R_1;
+		end
 	end
-   
-       
+
+	// Final XOR output
+	always @(*) begin
+		rd_d = add4_L_final ^ add4_R_final;
+	end
 
 
      always @(posedge(clk) or posedge(reset)) begin
@@ -144,7 +190,11 @@ module hw1_10(
             push1 <= #1 pushin;
             push2 <= #1 push1;
 	    push3 <= #1 push2;
-	    pusho <= #1 push3;
+	    push4 <= #1 push3;
+	    push5 <= #1 push4;
+	    push6 <= #1 push5;
+	    push7 <= #1 push6;
+	    pusho <= #1 push7;
             rdi <= #1 rd_d;
             ML00 <= #1 M00;
             CL00 <= #1 C00;
